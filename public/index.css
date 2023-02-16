@@ -1,0 +1,17 @@
+/*fonts */ 
+.inter {
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.helvetica {
+    font-family: 'Inter';
+    font-style: normal;
+}
+/*colors*/
+.blue {
+    color: #1681FF
+}
+.bg-gray {
+    background-color: #F5F7FB !important
+}

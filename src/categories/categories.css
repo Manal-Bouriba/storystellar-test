@@ -1,0 +1,31 @@
+.credits {
+    color: #646464;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 165.02%;
+    padding-top: 31px;
+}
+.carousel .carousel-indicators button {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: #E8EBF2;
+    bottom: 150px;
+ }
+
+ 
+
+.carousel .carousel-indicators .active{
+    width: 15px;
+    height: 5px;
+    border-radius:100%; 
+    background-color: #1681FF
+ }
+@media screen and (max-width: 576px) {
+    .credits {
+        font-size: 14px;
+        line-height: 165.02%;
+        padding-top:35px;
+        margin-bottom:30px;
+    }
+}

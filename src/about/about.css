@@ -1,0 +1,52 @@
+.placeHolder {
+    width: 515px !important;
+    height: 307px;
+    border-radius: 22px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    margin-left: 25px;
+}
+.txt {
+    font-size: 14px;
+    line-height: 144%;
+    letter-spacing: -0.02em;
+    color: #23242A;
+    text-align: justify;
+}
+.foot {
+    background-color: black;
+    height: 80px !important;
+    margin-top: 100px;
+    margin-top: 30px;
+}
+.copyright {
+    color: white;
+    padding-top:30px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 576px) {
+    .placeHolder{
+        width: 290px !important;
+        height: 261px;
+    }
+    h2 {
+        font-size: 30px !important;
+        margin-bottom: 30px !important;
+        margin-left: 0px;
+    }
+    .foot {
+        height: 49.85px !important;
+        margin-top: 100px;
+    }
+    .copyright {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        padding-top: 15px;
+        font-size: 12px;
+    }
+}

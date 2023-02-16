@@ -1,0 +1,60 @@
+.card{
+    width: 284.44px !important;
+    /*height: 357.38px;*/
+    box-shadow: 5.22868px 5.22868px 26.1434px 1.5686px rgba(39, 92, 141, 0.1) !important;
+    margin:auto;
+
+}
+.img-top {
+    width: 88.89px;
+    height: 83.66px;
+    border-radius: 5px;
+}
+.card-title {
+    font-weight: 700;
+    font-size: 23.0062px;
+    line-height: 110%;
+    color: #23242A;
+}
+.card-text {
+    font-weight: 400;
+    font-size: 12.5488px;
+    line-height: 130%;
+}
+
+.title {
+    color:#A9ACC4;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+}
+
+
+
+.list-group {
+    border: 0.5px solid #E3E3E3;
+    width: inherit;
+}
+
+.list-group-item {
+    font-weight: 700;
+    font-size: 12.5px;
+    line-height: 13px;
+    color: #23242A;
+    text-align: left;
+
+}
+
+.px-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+@media screen and (max-width: 576px) {
+    .card-header {
+        background-color: #1681FF !important;
+    }
+    .title {
+        color: white;
+    }
+}

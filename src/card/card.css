@@ -1,0 +1,29 @@
+.crd {
+    display:block;
+    background-color: #fff;
+    width: 286.14px !important;
+    max-width: 286.14px;
+    height: 163.36px;
+    border-radius: 10.6768px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.ico {
+    width: 62.99px;
+    height: 62.99px;
+    margin-left: 20.5px;
+    margin-bottom: 10px;
+
+}
+
+.crd-txt {
+    margin-left: 26.5px;
+    margin-top: 10px;
+    padding-right: 40px;
+    font-weight: 400;
+    font-size: 21.3536px;
+    line-height: 25px;
+}
