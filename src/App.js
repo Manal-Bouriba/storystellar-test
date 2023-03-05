@@ -1,15 +1,17 @@
-import Categories from "./categories/Categories";
-import NavBar from "./navBar/NavBar";
-import Featured from "./featured/Featured";
-import About from "./about/About";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import CategoryPage from "./categoryPage/CategoryPage";
+import HomePage from "./homePage/HomePage";
+
 function App() {
   return (
-    <div>
-      <NavBar/>
-      <Categories/>
-      <Featured/>
-      <About/>
-    </div>
+    <BrowserRouter>
+      <div>
+        <Routes>
+          <Route path="/storyscope" element={<HomePage/>}/>
+          <Route path='/storyscope/category' element={<CategoryPage/>} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

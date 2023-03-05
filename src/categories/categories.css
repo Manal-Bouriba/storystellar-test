@@ -5,22 +5,23 @@
     line-height: 165.02%;
     padding-top: 31px;
 }
-.carousel .carousel-indicators button {
-    width: 5px;
-    height: 5px;
+
+ .carousel__dot {
+    height: 10px;
+    background-color: #1681FF;
+    border: none;
+    margin: 3px;
+    width: 10px;
     border-radius: 100%;
-    background-color: #E8EBF2;
-    bottom: 150px;
  }
 
- 
 
-.carousel .carousel-indicators .active{
-    width: 15px;
-    height: 5px;
-    border-radius:100%; 
-    background-color: #1681FF
- }
+ .card-carousel {
+    margin-bottom: 30px !important;
+    max-height: 200px;
+    max-width: 300px;
+}
+
 @media screen and (max-width: 576px) {
     .credits {
         font-size: 14px;
@@ -28,4 +29,9 @@
         padding-top:35px;
         margin-bottom:30px;
     }
+
+    .Categories {
+        padding-bottom: 20px;
+    }
+
 }

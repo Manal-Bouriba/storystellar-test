@@ -4,7 +4,7 @@ export default function NavBar() {
   return (
     <div className='NavBar'>
       <div className='nav'>
-        <p className='inter logo'>
+        <p className='inter logo d-flex text-center text-md-start'>
           Storyscope
         </p>
       </div>

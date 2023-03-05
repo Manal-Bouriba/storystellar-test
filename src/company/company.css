@@ -2,7 +2,8 @@
     width: 284.44px !important;
     /*height: 357.38px;*/
     box-shadow: 5.22868px 5.22868px 26.1434px 1.5686px rgba(39, 92, 141, 0.1) !important;
-    margin:auto;
+    margin-left: 40px;
+    margin-right: 40px;
 
 }
 .img-top {
@@ -51,6 +52,11 @@
 }
 
 @media screen and (max-width: 576px) {
+    .card {
+        margin-left: 0px;
+        margin-right: 0px;
+        box-shadow: 5.22868px 5.22868px 7.1434px 1.5686px rgba(39, 92, 141, 0.1) !important;
+    }
     .card-header {
         background-color: #1681FF !important;
     }

@@ -2,7 +2,6 @@
     display:block;
     background-color: #fff;
     width: 286.14px !important;
-    max-width: 286.14px;
     height: 163.36px;
     border-radius: 10.6768px;
     padding: 10px;
@@ -26,4 +25,10 @@
     font-weight: 400;
     font-size: 21.3536px;
     line-height: 25px;
+}
+
+@media screen and (max-width: 576px) {
+    .crd{
+        margin-bottom: 0px;
+    }
 }

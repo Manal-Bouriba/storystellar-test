@@ -3,7 +3,7 @@
     font-weight: 600;
     line-height: 34px;
     margin-left: 130px;
-    margin-top: 1.938rem;
+    padding-top: 1.938rem;
 }
 .logo{
     margin-left: 0px;
@@ -22,8 +22,10 @@
         font-weight: 600;
         font-size: 24px;
         line-height: 29px;
-        text-align: center;
         margin-top: 1.938rem;
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
         
     }
     .sm-gray {
@@ -41,6 +43,9 @@
         padding-top: 25px;
     }
     .nav {
-        margin-top: 1rem;
+        margin-top: 1rem       
+    }
+    .logo {
+        text-align: center;
     }
 }
