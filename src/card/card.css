@@ -18,6 +18,11 @@
 
 }
 
+.no-deco {
+    text-decoration: none;
+    color: black;
+}
+
 .crd-txt {
     margin-left: 26.5px;
     margin-top: 10px;

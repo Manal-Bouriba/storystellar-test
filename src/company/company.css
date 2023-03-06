@@ -4,8 +4,13 @@
     box-shadow: 5.22868px 5.22868px 26.1434px 1.5686px rgba(39, 92, 141, 0.1) !important;
     margin-left: 40px;
     margin-right: 40px;
-
 }
+.wrapper{
+    margin-top: auto;
+    height: max-content;
+    align-items: flex-end !important;
+}
+
 .img-top {
     width: 88.89px;
     height: 83.66px;
@@ -31,9 +36,9 @@
 }
 
 
-
 .list-group {
     border: 0.5px solid #E3E3E3;
+    align-self: flex-end;
     width: inherit;
 }
 
