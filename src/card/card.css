@@ -23,6 +23,17 @@
     color: black;
 }
 
+.no-deco-card {
+    text-decoration: none;
+    color: black;
+    display:block;
+    width: 286.14px !important;
+    height: 163.36px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
 .crd-txt {
     margin-left: 26.5px;
     margin-top: 10px;

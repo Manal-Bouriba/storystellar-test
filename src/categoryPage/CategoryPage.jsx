@@ -1,25 +1,34 @@
 import Filters from '../filters/Filters'
 import Results from '../results/Results'
 import Footer from '../footer/Footer'
-import { getAgencies, getCategory } from '../utils/api'
+import { getCategories, getCategory, getCities, getCity } from '../utils/api'
 import { useLoaderData } from 'react-router-dom'
-
+import { useState } from 'react'
+import "./categoryPage.css"
 
 export default function CategoryPage() {
+  const [order, setOrder] = useState('')
   const loaderData = useLoaderData();
   return (
     <div>
-        <Filters category='Production audiovisuelle' city='Paris'/>
-        <Results agencies={loaderData}/>
+        <Filters category={loaderData.category.category} city={loaderData.city} cities={loaderData.cities} categories={loaderData.categories} onOrder={setOrder}/>
+        <Results category={loaderData} order={order}/>
         <Footer/>
-      </div>
+    </div>
   )
 }
 
-export function loader({ params }) {
-  const slug = params.slug
-  let res = {category: getCategory(slug),
-        agencies: getAgencies(slug)
-      }
-  return getAgencies(slug)
+
+
+export async function categoryLoader({ params }) {
+  const category = params.slug
+  const city  = params.city
+  let cityobj = await getCity(city).catch((error)=> {return error})
+  let categoriesList = await getCategories()
+  let cities = await getCities()
+  let res = getCategory(category).then((data) => {
+    let res = {city: cityobj.city.name, category: data, categories: categoriesList, cities: cities}
+    return res
+  })
+  return res
 }

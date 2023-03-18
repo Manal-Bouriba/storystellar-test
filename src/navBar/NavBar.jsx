@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './navBar.css'
 
 export default function NavBar() {
@@ -5,7 +6,7 @@ export default function NavBar() {
     <div className='NavBar'>
       <div className='nav'>
         <p className='inter logo d-flex text-center text-md-start'>
-          Storyscope
+          <Link className='no-deco' to='/'> Storyscope</Link> 
         </p>
       </div>
       <div className='container sm-gray'>

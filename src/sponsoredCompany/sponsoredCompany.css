@@ -8,3 +8,9 @@
     letter-spacing: 0.2em;
     color: #A9ACC4;
 }
+
+.reviews {
+    display: inline-block;
+    font-size: smaller;
+    padding-bottom: 10px;
+}

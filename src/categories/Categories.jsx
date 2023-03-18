@@ -10,24 +10,11 @@ export default function Categories(props) {
         <p className='inter credits text-center'>Annuaire créé par Storystellar</p>
         <div className='container'>
           {/* medium and large screens */}
-          <div className='row d-sm-flex d-none justify-content-center'>
+          <div className='row d-flex justify-content-center'>
             {categories.map((category, index) => (
-              <Card key={index} picUrl={category.image} url={category.slug} className='col-md-4 mb-5' text={category.name}/>
+              <Card key={index} picUrl={category.image} url={category.slug + '/paris'} className='col-md-4 mb-5' text={category.name}/>
               ))}
           </div>
-
-          {/* small screens*/}
-          <CarouselProvider totalSlides={categories.length} infinite={true} isIntrinsicHeight={true} className='d-sm-none card-carousel mx-auto'>
-          <Slider>
-            {categories.map((category, index) => (
-              <Slide key={index} index={index}>
-                <Card picUrl={category.image} className='col-md-4 mb-5' text={category.name}/>
-              </Slide>
-              ))}
-
-          </Slider>
-          <DotGroup className='text-center circle'/>
-          </CarouselProvider>
         </div>
       </div>
   )
