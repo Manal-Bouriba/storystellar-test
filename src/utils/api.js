@@ -1,9 +1,9 @@
-import env from "react-dotenv";
 
 
+let env = process.env.REACT_APP_API_URL
 
 export async function getCategories() {
-    const response = await fetch(env.API_URL + '/api/category', {
+    const response = await fetch(env + '/api/category', {
         method: "GET" 
       });
     if (!response.ok) {
@@ -13,7 +13,7 @@ export async function getCategories() {
 }
 
 export async function getCategory(slug) {
-    const response = await fetch(env.API_URL + '/api/category/by_slug/' + slug , {
+    const response = await fetch(env + '/api/category/by_slug/' + slug , {
         method: "GET"
     });
     if (!response.ok) {
@@ -23,7 +23,7 @@ export async function getCategory(slug) {
 }
 
 export async function getCity(slug) {
-    const response = await fetch(env.API_URL + '/api/city/by_slug/' + slug , {
+    const response = await fetch(env + '/api/city/by_slug/' + slug , {
         method: "GET"
     });
     if (!response.ok) {
@@ -36,7 +36,7 @@ export async function getAgencies(slug,city, page, order) {
     if (!page) {
         page = 1
     }
-    const response = await fetch(env.API_URL + '/api/agency/by_category_city/'+slug + '/'+ city +'/order_'+order + '?page=' + page,{
+    const response = await fetch(env + '/api/agency/by_category_city/'+slug + '/'+ city +'/order_'+order + '?page=' + page,{
         method: "GET"
     });
     if (!response.ok) {
@@ -47,7 +47,7 @@ export async function getAgencies(slug,city, page, order) {
 
 export async function getFeaturedAgencies() {
 
-    const response = await fetch(env.API_URL + '/api/agency/featured',{
+    const response = await fetch(env + '/api/agency/featured',{
         method: "GET"
     });
     if (!response.ok) {
@@ -58,7 +58,7 @@ export async function getFeaturedAgencies() {
 
 
 export async function getCities() {
-    const response = await fetch(env.API_URL + '/api/city', {
+    const response = await fetch(env + '/api/city', {
         method: "GET"
     });
     if (!response.ok) {
@@ -68,7 +68,7 @@ export async function getCities() {
 }
 
 export async function slugifyCities() {
-    const response = await fetch(env.API_URL + '/api/city/slugify', {
+    const response = await fetch(env + '/api/city/slugify', {
         method: "GET"
     });
     if (!response.ok) {
@@ -78,7 +78,7 @@ export async function slugifyCities() {
 }
 
 export async function slugifyCategories() {
-    const response = await fetch(env.API_URL + '/api/category/slugify', {
+    const response = await fetch(env + '/api/category/slugify', {
         method: "GET"
     });
     if (!response.ok) {
@@ -89,7 +89,7 @@ export async function slugifyCategories() {
 
 export async function getAgenciesAll(slug) {
 
-    const response = await fetch(env.API_URL + '/api/agency/by_category/'+slug ,{
+    const response = await fetch(env + '/api/agency/by_category/'+slug ,{
         method: "GET"
     });
     if (!response.ok) {
@@ -99,7 +99,7 @@ export async function getAgenciesAll(slug) {
 }
 
 export async function deleteCity(id) {
-    const response = await fetch(env.API_URL + '/api/city/' + id, {
+    const response = await fetch(env + '/api/city/' + id, {
         method: "DELETE"
     });
     if (!response.ok) {
@@ -109,7 +109,7 @@ export async function deleteCity(id) {
 }
 
 export async function deleteAgency(id) {
-    const response = await fetch(env.API_URL + '/api/agency/' + id, {
+    const response = await fetch(env + '/api/agency/' + id, {
         method: "DELETE"
     });
     if (!response.ok) {
@@ -119,7 +119,7 @@ export async function deleteAgency(id) {
 }
 
 export async function deleteCategory(id) {
-    const response = await fetch(env.API_URL + '/api/category/' + id, {
+    const response = await fetch(env + '/api/category/' + id, {
         method: "DELETE"
     });
     if (!response.ok) {
@@ -134,7 +134,7 @@ export async function addCity(name, inhabitants) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(req)
     };
-    const response = await fetch(env.API_URL + '/api/city/create',  requestOptions);
+    const response = await fetch(env + '/api/city/create',  requestOptions);
     if (!response.ok) {
         throw new Error({message: 'Failed to fetch cities', status:404})
     }
@@ -148,7 +148,7 @@ export async function addAgency(name, rating, reviews, city,category,website, lo
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(req)
     };
-    const response = await fetch(env.API_URL + '/api/agency/create',  requestOptions);
+    const response = await fetch(env + '/api/agency/create',  requestOptions);
     if (!response.ok) {
         throw new Error({message: 'Failed to fetch cities', status:404})
     }
@@ -162,7 +162,7 @@ export async function addCategory(name, image, displayName) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(req)
     };
-    const response = await fetch(env.API_URL + '/api/category/create',  requestOptions);
+    const response = await fetch(env + '/api/category/create',  requestOptions);
     if (!response.ok) {
         throw new Error({message: 'Failed to fetch cities', status:404})
     }
@@ -175,7 +175,7 @@ export async function editCity(id,name,inhabitants) {
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(req)
     };
-    const response = await fetch(env.API_URL + '/api/city/'+id,  requestOptions);
+    const response = await fetch(env + '/api/city/'+id,  requestOptions);
     if (!response.ok) {
         throw new Error({message: 'Failed to fetch cities', status:404})
     }
@@ -196,7 +196,7 @@ export async function editAgency(id, name, rating, reviews, city,category,websit
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(req)
     };
-    const response = await fetch(env.API_URL + '/api/agency/'+id,  requestOptions);
+    const response = await fetch(env + '/api/agency/'+id,  requestOptions);
     if (!response.ok) {
         throw new Error({message: 'Failed to fetch cities', status:404})
     }
@@ -210,7 +210,7 @@ export async function editCategory(id,name,image, displayName) {
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(req)
     };
-    const response = await fetch(env.API_URL + '/api/category/'+id,  requestOptions);
+    const response = await fetch(env + '/api/category/'+id,  requestOptions);
     if (!response.ok) {
         throw new Error({message: 'Failed to fetch cities', status:404})
     }
@@ -224,7 +224,7 @@ export async function refreshAgencies(category, city) {
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(req)
     };
-    const response = await fetch(env.API_URL + '/api/refresh-results/' , requestOptions);
+    const response = await fetch(env + '/api/refresh-results/' , requestOptions);
     if (!response.ok) {
         throw new Error({message: 'Failed to fetch cities', status:404})
     }
