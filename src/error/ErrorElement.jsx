@@ -10,7 +10,7 @@ export default function ErrorElement() {
     <p className="lead">
     la page que vous recherchez actuellement n'existe pas ou est temporairement indisponible.
       </p>
-    <Link to="/" className="btn btn-primary">Revenir à StoryScope</Link>
+    <Link to="/storyscope" className="btn btn-primary">Revenir à StoryScope</Link>
 </div>
 </div>
   )

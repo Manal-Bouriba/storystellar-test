@@ -11,11 +11,11 @@ import DashboardAgency from "./dashboard/DashboardAgency";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
-          <Route index path="/" element={<HomePage/>} loader={categoriesLoader}/>
-          <Route path='/:slug/:city' element={<CategoryPage/>} loader={categoryLoader}/>
-          <Route path='/admin/city' element={<DashboardCity/>} loader={cityLoader}/>
-          <Route path='/admin/category' element={<DashboardCategory/>} loader={categoriesLoader}/>
-          <Route path='/admin/agency/:category' element={<DashboardAgency/>} loader={agenciesLoader}/>
+          <Route index path="/storyscope" element={<HomePage/>} loader={categoriesLoader}/>
+          <Route path='/storyscope/:slug/:city' element={<CategoryPage/>} loader={categoryLoader}/>
+          <Route path='/storyscope/admin/city' element={<DashboardCity/>} loader={cityLoader}/>
+          <Route path='/storyscope/admin/category' element={<DashboardCategory/>} loader={categoriesLoader}/>
+          <Route path='/storyscope/admin/agency/:category' element={<DashboardAgency/>} loader={agenciesLoader}/>
 
     </Route>
   )

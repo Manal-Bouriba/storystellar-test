@@ -11,13 +11,13 @@ export default function DashboardCity() {
         <Sidebar>
           <h5 className='text-center mt-4'>STORYSCOPE ADMIN</h5>
             <Menu>
-              <MenuItem component={<Link to="/admin/city" />}> Cities </MenuItem>
+              <MenuItem component={<Link to="/storyscope/admin/city" />}> Cities </MenuItem>
               <SubMenu label="Agencies">
               {loaderData.categories.map((category, index) => {
-                        return <MenuItem component={<Link to={"/admin/agency/" + category.slug}/>} key={index}> {category.name}</MenuItem>})}
+                        return <MenuItem component={<Link to={"/storyscope/admin/agency/" + category.slug}/>} key={index}> {category.name}</MenuItem>})}
      
               </SubMenu>
-              <MenuItem component={<Link to="/admin/category" />}> Categories </MenuItem>
+              <MenuItem component={<Link to="/storyscope/admin/category" />}> Categories </MenuItem>
             </Menu>
         </Sidebar>
         <TableCity data={loaderData}/>

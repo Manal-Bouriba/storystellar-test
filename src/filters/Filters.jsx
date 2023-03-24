@@ -34,7 +34,7 @@ export default function Filters(props) {
   let categories = props.categories.categories
   let cities = props.cities.cities
   const handleOnSelect = (item) => {
-    window.location.href = "/" + props.category.slug + "/" + item.slug;
+    window.location.href = "/storyscope/" + props.category.slug + "/" + item.slug;
   }
   return (
     <div className='bg-gray pb-4 mb-5 Filters'>
@@ -57,7 +57,7 @@ export default function Filters(props) {
                 </button>
                 <div className="dropdown-content">
                 {categories.map((category, index) => (
-                  <a key={index} href={'/' +category.slug + '/paris'}> {category.name} </a>
+                  <a key={index} href={'/storyscope/' +category.slug + '/paris'}> {category.name} </a>
               ))}
                     
 
