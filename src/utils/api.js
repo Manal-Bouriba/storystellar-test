@@ -1,6 +1,6 @@
 
 
-let env = process.env.REACT_APP_API_URL
+let env = 'https://storyscope.storystellar.com'
 
 export async function getCategories() {
     const response = await fetch(env + '/api/category', {

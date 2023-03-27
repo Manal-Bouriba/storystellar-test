@@ -40,7 +40,7 @@ export default function Filters(props) {
     <div className='bg-gray pb-4 mb-5 Filters'>
       <div className='nav'>
         <p className='inter logo'>
-        <Link className='no-deco' to='/'> Storyscope</Link> 
+        <Link className='no-deco' to='/storyscope'> Storyscope</Link> 
         </p>
       </div>
       <div className='container'>

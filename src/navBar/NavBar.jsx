@@ -6,7 +6,7 @@ export default function NavBar() {
     <div className='NavBar'>
       <div className='nav'>
         <p className='inter logo d-flex text-center text-md-start'>
-          <Link className='no-deco' to='/'> Storyscope</Link> 
+          <Link className='no-deco' to='/storyscope'> Storyscope</Link> 
         </p>
       </div>
       <div className='container sm-gray'>
