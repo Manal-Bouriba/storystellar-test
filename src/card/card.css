@@ -35,10 +35,10 @@
 }
 
 .crd-txt {
-    margin-left: 26.5px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 10px;
-    padding-right: 40px;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 21.3536px;
     line-height: 25px;
 }

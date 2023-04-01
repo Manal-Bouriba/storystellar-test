@@ -6,7 +6,7 @@ export default function Card(props) {
     <div className='crd mb-4'>
       
         <img className='ico' src={props.picUrl} alt='icon'/>
-        <p className='crd-txt helvetica'>{props.text}</p>
+        <p className='crd-txt inter'>{props.text}</p>
       
     </div>
     </Link>

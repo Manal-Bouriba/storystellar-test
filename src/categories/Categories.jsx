@@ -1,13 +1,12 @@
 import './categories.css'
 import Card from "../card/Card";
-import { CarouselProvider, Slider, Slide, DotGroup } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 export default function Categories(props) {
   let categories = props.categories.categories
   return (
       <div className='Categories bg-gray'>
-        <p className='inter credits text-center'>Annuaire créé par Storystellar</p>
+        <p className='inter credits text-center'>Annuaire créé par <a className='no-deco'href='https://www.storystellar.com'>Storystellar</a></p>
         <div className='container'>
           {/* medium and large screens */}
           <div className='row d-flex justify-content-center'>
