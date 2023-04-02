@@ -3,10 +3,15 @@ import { Link } from 'react-router-dom'
 import './filters.css'
 import { ReactSearchAutocomplete } from 'react-search-autocomplete'
 import {  useEffect} from 'react'
+import { addReview, getReviews } from '../utils/api'
+import { Rating } from 'react-simple-star-rating'
+import StructuredData from 'react-google-structured-data'
 
 export default function Filters(props) {
+  let rating = props.rating
   const [focus, setFocus] = useState(false)
-  
+  const [reviews, setReviews] = useState(rating.rating)
+  const [count, setCount] = useState(rating.count)
   useEffect(() => {
     if (focus===true) {
     document.querySelector('input').focus()
@@ -23,14 +28,19 @@ export default function Filters(props) {
     setFocus(false)
     setFocus(true)
   }
-
-  function onLeave(e) {
-    setFocus(false)
+  async function handleRating(rate) {
+    await addReview(rate)
+    let refresh = await getReviews()
+    setReviews(refresh.rating)
+    setCount(count + 1)
   }
+
+
   function onSelect(e) {
     e.preventDefault()
     props.onOrder(e.target.id)
   }
+  let name = props.category.name
   let categories = props.categories.categories
   let cities = props.cities.cities
   const handleOnSelect = (item) => {
@@ -38,6 +48,17 @@ export default function Filters(props) {
   }
   return (
     <div className='bg-gray pb-4 mb-5 Filters'>
+      <StructuredData
+    type='Product'
+    data={{
+      "name": name,
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": reviews,
+        "reviewCount": count
+      }
+    }}
+/>
       <div className='nav'>
         <p className='inter logo'>
         <Link className='no-deco' to='/storyscope'> Storyscope</Link> 
@@ -46,6 +67,12 @@ export default function Filters(props) {
       <div className='container'>
         <p className='helvetica headline-2 text-center'>Meilleurs Agences de <span className='blue'>{props.category.display_name}</span> à {props.city} </p>
       </div>
+      <div>
+
+      </div>
+      <div className='text-center'><Rating className='pb-2 my-0 mb-1' initialValue={reviews} onClick={handleRating}/> 
+       <span className='count'>({count})</span> 
+       </div>
       <hr/>
       <div className="container pt-4 mx-auto">
         <div className="row">
@@ -76,7 +103,7 @@ export default function Filters(props) {
                 </div>
             </div>
             <div className="col-md-4">
-              <div className="width mx-auto" onMouseOver={onOver} onClick={onClick} onMouseLeave={onLeave}>
+              <div className="width mx-auto" onMouseOver={onOver} onClick={onClick}>
                 <ReactSearchAutocomplete showIcon={false}
                 showItemsOnFocus={true}
                 onSelect={handleOnSelect}

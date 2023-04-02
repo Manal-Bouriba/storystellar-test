@@ -230,3 +230,28 @@ export async function refreshAgencies(category, city) {
     }
     return response.json()
 }
+
+
+export async function getReviews() {
+    const response = await fetch(env + '/api/review', {
+        method: "GET"
+    });
+    if (!response.ok) {
+        throw new Error({message: 'Failed to fetch cities', status:404})
+    }
+    return response.json()
+}
+
+export async function addReview(value) {
+    const req = {value:value}
+    const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(req)
+    };
+    const response = await fetch(env + '/api/review/create',  requestOptions);
+    if (!response.ok) {
+        throw new Error({message: 'Failed to fetch cities', status:404})
+    }
+    return response
+}

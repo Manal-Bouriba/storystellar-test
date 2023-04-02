@@ -58,7 +58,12 @@
   .drop-down:hover .dropdown-content {
     display: block;
   }
-  
+.count {
+  font-size: 27px;
+  display: inline-block;
+  margin-left:5px;
+  color: gray
+}
 .arrow-bottom {
     font-size: 20px;
     padding: 0px;
