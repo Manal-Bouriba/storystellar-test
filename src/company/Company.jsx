@@ -22,7 +22,7 @@ export default function Company(props) {
                 <li className="list-group-item bg-gray py-3"><img src={Cost} alt='icon '/>  A partir de {props.cost} par project</li>
                 <li className="list-group-item bg-gray py-3"> <img src={Projects} alt='icon' />  {props.projCount} réalisations</li>
             </ul> */} 
-            <a href={props.websiteUrl} className="d-block btn btn-primary mx-5 mb-2" rel='nofollow' target="_blank">visiter le site</a>
+            <a href= {props.websiteUrl} className="d-block btn btn-primary mx-5 mb-2" rel='nofollow' target="_blank">visiter le site</a>
             </div>
     </div>
   )
