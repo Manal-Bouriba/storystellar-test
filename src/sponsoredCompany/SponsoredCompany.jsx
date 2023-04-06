@@ -20,14 +20,13 @@ export default function SponsoredCompany(props) {
             <Rating className='text-center' allowFraction={true} initialValue={props.rating} readonly={readonly} size={size}/> <span className='reviews'>({props.reviews})</span>
             </div>
         </div>
-        <div className="card-footer px-0 bg-white pt-0 wrap">
-        <ul className="list-group list-group-flush mb-3">
+        <div className='card-footer bg-white px-0'>
+           {/*<ul className="list-group list-group-flush mb-3">
                 <li className="list-group-item bg-gray py-3 pl-2"> <img src={Workers} alt='icon'/> {props.numWorkers} personnes dans leur équipe</li>
                 <li className="list-group-item bg-gray py-3"><img src={Cost} alt='icon '/>  A partir de {props.cost} par project</li>
                 <li className="list-group-item bg-gray py-3"> <img src={Projects} alt='icon' />  {props.projCount} réalisations</li>
-            </ul>
-            <a href={props.websiteUrl} target="_blank" rel='nofollow' className="d-block btn btn-primary mx-3" >visiter le site</a>
-        
+            </ul> */} 
+            <a href= {props.websiteUrl} className="d-block btn btn-primary mx-5 mb-2" rel='nofollow noreferrer' target="_blank">Visiter le site</a>
         </div>
     </div>
   )

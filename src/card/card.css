@@ -19,8 +19,8 @@
 }
 
 .no-deco {
-    text-decoration: none;
-    color: black;
+    text-decoration: none !important;
+    color: black !important;
 }
 
 .no-deco-card {

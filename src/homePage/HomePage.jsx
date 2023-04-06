@@ -1,24 +1,31 @@
-import React, { Suspense, lazy } from 'react';
-//import Categories from "../categories/Categories";
+import React, {lazy } from 'react';
 import NavBar from "../navBar/NavBar";
 import Featured from "../featured/Featured";
 import About from "../about/About";
 import Footer from '../footer/Footer';
+import {Helmet} from "react-helmet";
 import { getCategories, getFeaturedAgencies } from '../utils/api';
 import {
   Await,
   defer,
   useLoaderData,
-}from 'react-router-dom';
+} from 'react-router-dom';
 import  "./homePage.css"
 
 
 const Categories =  lazy(() => import('../categories/Categories'));
+
 export default function HomePage() {
-  
   const loaderData = useLoaderData();
   return (
     <div>
+            <Helmet>
+                <meta
+                  name="description"
+                  content="Trouvez la meilleur agence communication/marketing selon vos besoins"
+                />
+                <title>Storyscope - Accueil</title>
+            </Helmet>
         <NavBar/>
          <React.Suspense
           fallback={<p style={{textAlign: "center", marginLeft:"auto", marginRight:"auto", color:"blue"}}>Chargement...</p>}> 
@@ -31,13 +38,7 @@ export default function HomePage() {
               <Categories categories={categories}/>
           )}
         </Await>
-          </React.Suspense>
-        <React.Suspense
-          fallback={
-          <div style={{textAlign: "center", marginLeft:"auto", marginRight:"auto"}}>
-          <p style={{color:"red"}}>Chargement...</p>
-          </div>
-          }> 
+
 
           <Await
             resolve={loaderData.featured}
@@ -48,9 +49,10 @@ export default function HomePage() {
             <Featured featured={featured}/>
           )}
         </Await>
-        </React.Suspense>
         <About/>
         <Footer/>
+        </React.Suspense>
+
     </div>
   )
 }

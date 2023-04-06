@@ -1,16 +1,15 @@
-import { Link } from 'react-router-dom'
 import './navBar.css'
 
 export default function NavBar() {
   return (
     <div className='NavBar'>
-      <div className='nav'>
+      <header className='nav'>
         <p className='inter logo d-flex text-center text-md-start'>
-          <Link className='no-deco' to='/storyscope'> Storyscope</Link> 
+          <a className='no-deco' href='https://storystellar.com/storyscope'> Storyscope</a> 
         </p>
-      </div>
+      </header>
       <div className='container sm-gray'>
-        <p className='helvetica headline text-center'>Trouvez l'<span className='blue'>agence parfaite</span> pour vos besoins en <br/>marketing / communication</p>
+        <h1 className='helvetica headline text-center'>Trouvez l'<span className='blue'>agence parfaite</span> pour vos besoins en <br/>marketing / communication</h1>
       </div>
     </div>
   )

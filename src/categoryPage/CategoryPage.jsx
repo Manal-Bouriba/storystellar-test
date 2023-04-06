@@ -5,13 +5,22 @@ import { getCategories, getCategory, getCities, getCity, getReviews } from '../u
 import { useLoaderData } from 'react-router-dom'
 import { useState } from 'react'
 import "./categoryPage.css"
-
+import {Helmet} from "react-helmet";
 export default function CategoryPage() {
-  const [order, setOrder] = useState('')
+  const [order, setOrder] = useState('Best')
   const loaderData = useLoaderData();
+  let display_name = loaderData.category.category.display_name
+  let city = loaderData.city
   return (
     <div>
-        <Filters category={loaderData.category.category} city={loaderData.city} cities={loaderData.cities} rating={loaderData.rating} categories={loaderData.categories} onOrder={setOrder}/>
+        <Helmet>
+          <meta
+            name="description"
+            content={"Meilleure agencs de " + display_name  + " à " + city}
+          />
+          <title>Storyscope - Meilleurs agences {loaderData.category.category.display_name} à {loaderData.city}</title>
+        </Helmet>
+        <Filters category={loaderData.category.category} city={loaderData.city} cities={loaderData.cities} rating={loaderData.rating} categories={loaderData.categories} onOrder={setOrder} order={order}/>
         <Results category={loaderData} order={order}/>
         <Footer/>
     </div>
