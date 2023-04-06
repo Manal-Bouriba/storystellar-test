@@ -1,17 +1,16 @@
 @font-face {
-    font-family: "GoldmanBold";
-    src: local("GoldmanBold"),
+    font-family: "Inter";
+    src: local("Inter"),
      url("./fonts/Inter.ttf") format("truetype");
     }
 
 /*fonts */ 
 .inter {
-    font-family: 'Inter';
-    font-style: normal;
+    font-family: 'Inter', sans-serif;
 }
 
 .helvetica {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
 }
 /*colors*/
