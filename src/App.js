@@ -8,6 +8,7 @@ import DashboardCategory from "./dashboard/DashboardCategory";
 import DashboardCity from "./dashboard/DashboardCity";
 import { agenciesLoader } from "./dashboard/DashboardAgency";
 import DashboardAgency from "./dashboard/DashboardAgency";
+import ReactGA from 'react-ga4';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
@@ -20,8 +21,12 @@ const router = createBrowserRouter(
     </Route>
   )
 );
-
+let setGA = () => {
+  ReactGA.initialize('G-L1X0Q5P47T');
+  ReactGA.pageview('Init page view');
+};
 function App() {
+  setGA();
   return (
     <RouterProvider router={router}/>
 
