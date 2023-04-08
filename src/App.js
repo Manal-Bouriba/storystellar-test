@@ -21,12 +21,11 @@ const router = createBrowserRouter(
     </Route>
   )
 );
-let setGA = () => {
-  ReactGA.initialize('G-L1X0Q5P47T');
-  ReactGA.pageview('Init page view');
-};
+
+const TRACKING_ID = "G-L1X0Q5P47T"; 
+ReactGA.initialize(TRACKING_ID); 
+
 function App() {
-  setGA();
   return (
     <RouterProvider router={router}/>
 
