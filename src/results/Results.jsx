@@ -1,16 +1,31 @@
 import React, { useRef, useState, useEffect } from 'react'
 import './results.css'
 import Company from '../company/Company'
-import useLazyLoad from '../utils/useLazyLoad'
+import { addReview, getReviews } from '../utils/api'
+import { Rating } from 'react-simple-star-rating'
+import StructuredData from 'react-google-structured-data'
+// import useLazyLoad from '../utils/useLazyLoad'
 import { getAgencies } from "../utils/api";
 const UniqueSet = require('@sepiariver/unique-set'); 
+
 export default function Results(props) {
+  let rating = props.rating
+  const [reviews, setReviews] = useState(rating.rating)
+  const [count, setCount] = useState(rating.count)
   const [pageNum, setPageNum] = useState(1)
   const [totalPages, setTotalPages] = useState(1)
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(false)
 
   let order = props.order
+
+  async function handleRating(rate) {
+    await addReview(rate)
+    let refresh = await getReviews()
+    setReviews(refresh.rating)
+    setCount(count + 1)
+  }
+
   async function loadMore(slug, city, pageNum, order) {
     setLoading(true)
     let s = await getAgencies(slug, city, pageNum, order);
@@ -40,8 +55,20 @@ export default function Results(props) {
 const {data, loading, hasMore} = useLazyLoad({triggerRef, slug, city, order})*/}
 
   let dataSet = new UniqueSet(data)
+  let name = props.category.category.category.name
   return (
     <div>
+      <StructuredData
+        type='Product'
+        data={{
+            "name": name,
+            "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": reviews,
+            "reviewCount": count
+            }
+          }}
+      />
         <div className='container text-center'>
         {/*large and medium screens*/}
         <div className='row justify-content-center'>
@@ -70,13 +97,17 @@ const {data, loading, hasMore} = useLazyLoad({triggerRef, slug, city, order})*/}
               }
             )}
         </div>
-        <div className={ "text-center "+ (!loading ? 'd-none' : 'd-block') }>Loading...</div>
+        <div className={ "text-center "+ (!loading ? 'd-none' : 'd-block') }>Chargement...</div>
         {/*<div ref={triggerRef} className={ "text-center" + (hasMore ? 'd-none' : 'd-block')}></div>*/}
-        <a role='button' className={(pageNum > totalPages || loading? 'd-none': 'd-block')} onClick={()=>{if (pageNum<=totalPages) { loadMore(slug, city, pageNum, order)}}}>load more</a>
+        <a role='button' className={(pageNum > totalPages || loading? 'd-none': 'd-block')} onClick={()=>{if (pageNum<=totalPages) { loadMore(slug, city, pageNum, order)}}}>Afficher plus</a>
         {/*<div className={ "text-center "+ (!hasMore ? 'd-none' : 'd-block') }>Loading...</div>
         <div className={ "text-center "+ (hasMore ? 'd-none' : 'd-block') }>End of results.</div>*/}
 
       </div>
+      <hr/>
+      <div className='text-center'><Rating className='pb-2 my-0 mb-1' initialValue={reviews} size={30} onClick={handleRating}/> 
+       <span className='count'>({count})</span> 
+       </div>
     </div>
   )
 }

@@ -5,7 +5,7 @@ export default function NavBar() {
     <div className='NavBar'>
       <header className='nav'>
         <p className='inter logo d-flex text-center text-md-start'>
-          <a className='no-deco' href='https://storystellar.com/storyscope'> Storyscope</a> 
+          <a className='no-deco' href='/storyscope'> Storyscope</a> 
         </p>
       </header>
       <div className='container sm-gray'>

@@ -16,6 +16,7 @@
     width: 250px !important;
     color: black;
     padding-left: 10px;
+    padding-right:10px;
     font-size: 16px;
     border: none;
   }
@@ -56,6 +57,10 @@
   .drop-down:hover .dropdown-content {
     display: block;
   }
+  .cityselector:focus + .dropdown-content {
+    display: block;
+  }
+
 .count {
   font-size: 27px;
   display: inline-block;

@@ -2,19 +2,14 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './filters.css'
 import {  useEffect} from 'react'
-import { addReview, getReviews } from '../utils/api'
-import { Rating } from 'react-simple-star-rating'
-import StructuredData from 'react-google-structured-data'
+import { BsFillCaretDownFill } from "react-icons/bs";
 
 export default function Filters(props) {
-  let rating = props.rating
-  const [reviews, setReviews] = useState(rating.rating)
-  const [count, setCount] = useState(rating.count)
   const [query, setQuery] = useState(props.city)
   const [result, setResult] = useState(props.cities.cities)
   const [filterText, setFilterText] = useState('Mieux Notés')
   function search(item) {
-    return item.name.includes(query)
+    return item.name.toLowerCase().includes(query.toLowerCase())
   }
   useEffect(()=>{
     setResult(props.cities.cities.filter(search))
@@ -35,12 +30,6 @@ export default function Filters(props) {
       setFilterText('Ordre Alphabetique')
     }
   }, [props.order])
-  async function handleRating(rate) {
-    await addReview(rate)
-    let refresh = await getReviews()
-    setReviews(refresh.rating)
-    setCount(count + 1)
-  }
 
 
   function onSelect(e) {
@@ -49,26 +38,15 @@ export default function Filters(props) {
   }
   let name = props.category.name
   let categories = props.categories.categories
-  let cities = props.cities.cities
   const handleOnChange = (item) => {
     setQuery(item.target.value)
   }
   return (
     <div className='bg-gray pb-4 mb-5 Filters'>
-      <StructuredData
-    type='Product'
-    data={{
-      "name": name,
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": reviews,
-        "reviewCount": count
-      }
-    }}
-/>
+
       <header className='nav'>
         <p className='inter logo'>
-        <Link className='no-deco' to='/storyscope'> Storyscope</Link> 
+        <a href='/storyscope' style={{textDecoration:"none", color:"black"}}> Storyscope</a> 
         </p>
       </header>
       <div className='container'>
@@ -77,16 +55,13 @@ export default function Filters(props) {
       <div>
 
       </div>
-      <div className='text-center'><Rating className='pb-2 my-0 mb-1' initialValue={reviews} onClick={handleRating}/> 
-       <span className='count'>({count})</span> 
-       </div>
       <hr/>
       <div className="container pt-4 mx-auto">
         <div className="row">
             <div className="drop-down col-md-4 mb-4">
             <button className="dropbtn">
                     <div className='d-flex justify-content-between align-items-center'>
-                        <span className='inter'>{props.category.display_name}</span>  <span className='arrow-bottom'>⌄</span>
+                        <span className='inter'>{props.category.display_name}</span>  <span className='arrow-bottom'><BsFillCaretDownFill size={13}/></span>
                     </div>
                 </button>
                 <div className="dropdown-content">
@@ -100,7 +75,7 @@ export default function Filters(props) {
             <div className="drop-down col-md-4 mb-4">
             <button className="dropbtn">
                     <div className='d-flex justify-content-between align-items-center'>
-                        <span className='inter'>{filterText}</span>  <span className='arrow-bottom'>⌄</span>
+                        <span className='inter'>{filterText}</span>  <span className='arrow-bottom'><BsFillCaretDownFill size={13}/></span>
                     </div>
                 </button>
                 <div className="dropdown-content">
@@ -110,7 +85,7 @@ export default function Filters(props) {
                 </div>
             </div>
             <div className="col-md-4 drop-down">
-            <input type='text' className="dropbtn" placeholder='Ville' value={query} onChange={handleOnChange}>
+            <input type='text' className="dropbtn cityselector" placeholder='Ville' value={query} onChange={handleOnChange}>
             </input>
 
             <div className="dropdown-content">

@@ -20,8 +20,8 @@ export default function CategoryPage() {
           />
           <title>Storyscope - Meilleurs agences {loaderData.category.category.display_name} à {loaderData.city}</title>
         </Helmet>
-        <Filters category={loaderData.category.category} city={loaderData.city} cities={loaderData.cities} rating={loaderData.rating} categories={loaderData.categories} onOrder={setOrder} order={order}/>
-        <Results category={loaderData} order={order}/>
+        <Filters category={loaderData.category.category} city={loaderData.city} cities={loaderData.cities} categories={loaderData.categories} onOrder={setOrder} order={order}/>
+        <Results category={loaderData} order={order} rating={loaderData.rating}/>
         <Footer/>
     </div>
   )
