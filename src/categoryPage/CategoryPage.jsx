@@ -6,15 +6,12 @@ import { useLoaderData } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import "./categoryPage.css"
 import {Helmet} from "react-helmet";
-import ReactGA from 'react-ga4'
 export default function CategoryPage() {
   const [order, setOrder] = useState('Best')
   const loaderData = useLoaderData();
   let display_name = loaderData.category.category.display_name
   let city = loaderData.city
-  useEffect(()=>{
-    ReactGA.pageview(window.location.pathname)
-  }, []);
+
   return (
     <div>
         <Helmet>
