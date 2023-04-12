@@ -5,7 +5,7 @@ export default function Featured(props) {
   let featured = props.featured.agencies
   return (
     <div className='Featured'>
-      <p className='helvetica featuredTitle text-center'><span className='blue'>Agence </span>en vedette</p>
+      <h2 className='helvetica featuredTitle text-center'><span className='blue'>Agences </span>en vedette</h2>
       <div className='container'>
         {/*large and medium screens*/}
         <div className='row d-flex justify-content-center'>

@@ -50,7 +50,7 @@ export default function Filters(props) {
         </p>
       </header>
       <div className='container'>
-        <p className='helvetica headline-2 text-center'>Meilleurs Agences de <span className='blue'>{props.category.display_name}</span> à {props.city} </p>
+        <h1 className='helvetica headline-2 text-center'>Meilleurs Agences de <span className='blue'>{props.category.display_name}</span> à {props.city} </h1>
       </div>
       <div>
 
