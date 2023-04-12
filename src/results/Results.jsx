@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react'
 import './results.css'
+import {Helmet} from "react-helmet";
 import Company from '../company/Company'
 import { addReview, getReviews } from '../utils/api'
 import { Rating } from 'react-simple-star-rating'
@@ -18,7 +19,7 @@ export default function Results(props) {
   const [loading, setLoading] = useState(false)
 
   let order = props.order
-
+  let display_name = props.category.category.display_name
   async function handleRating(rate) {
     await addReview(rate)
     let refresh = await getReviews()
@@ -53,11 +54,18 @@ export default function Results(props) {
   if (!order) {order = 'Best'}
   {/*const triggerRef = useRef(null)
 const {data, loading, hasMore} = useLazyLoad({triggerRef, slug, city, order})*/}
-
+  let total = totalPages*6
   let dataSet = new UniqueSet(data)
   let name = props.category.category.category.name
   return (
     <div>
+        <Helmet>
+          <meta
+            name="description"
+            content={"Meilleures agences de " + display_name  + " à " + city}
+          />
+          <title>{'Storyscope - Les ' + total  + ' meilleurs agences ' + props.category.category.category.display_name +  ' à ' + city}</title>
+        </Helmet>
       <StructuredData
         type='Product'
         data={{
