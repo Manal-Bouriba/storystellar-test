@@ -22,9 +22,9 @@ export default function HomePage() {
             <Helmet>
                 <meta
                   name="description"
-                  content="Trouvez la meilleur agence communication/marketing selon vos besoins"
+                  content="Trouvez l'agence de marketing et communication qu'il vous faut en France grâce à notre annuaire complet. Découvrez les meilleurs experts du secteur."
                 />
-                <title>Storyscope - Accueil</title>
+                <title>Storyscope - Annuaire des agences marketing et communication en France</title>
             </Helmet>
         <NavBar/>
          <React.Suspense
