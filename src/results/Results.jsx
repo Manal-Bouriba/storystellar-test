@@ -62,7 +62,7 @@ const {data, loading, hasMore} = useLazyLoad({triggerRef, slug, city, order})*/}
         <Helmet>
           <meta
             name="description"
-            content={"Meilleures agences de " + display_name  + " à " + city}
+            content={"Vous avez besoin d'une agence de " + props.category.category.category.display_name + " ? Vous êtes au bon endroit ! Découverez les " + total + " meilleures agences de " + props.category.category.category.display_name + " à " +  city}
           />
           <title>{'Storyscope - Les ' + total  + ' meilleurs agences ' + props.category.category.category.display_name +  ' à ' + city}</title>
         </Helmet>
