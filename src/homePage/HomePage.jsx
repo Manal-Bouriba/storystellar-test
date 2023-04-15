@@ -24,7 +24,7 @@ export default function HomePage() {
                   name="description"
                   content="Trouvez l'agence de marketing et communication qu'il vous faut en France grâce à notre annuaire complet. Découvrez les meilleurs experts du secteur."
                 />
-                <title>Storyscope - Annuaire des agences marketing et communication en France</title>
+                <title>Annuaire des agences marketing et communication en France</title>
             </Helmet>
         <NavBar/>
          <React.Suspense
