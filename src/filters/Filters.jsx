@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import './filters.css'
 import {  useEffect} from 'react'
 import { BsFillCaretDownFill } from "react-icons/bs";
 

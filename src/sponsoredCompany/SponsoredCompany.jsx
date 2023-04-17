@@ -1,4 +1,3 @@
-import './sponsoredCompany.css'
 //import Projects from '../assets/projects.png'
 //import Workers from '../assets/workers.png'
 //import Cost from '../assets/cost.png'

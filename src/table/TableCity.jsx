@@ -14,7 +14,9 @@ export default function TableCity(props) {
         e.preventDefault()
         let response = await deleteCity(e.currentTarget.id)
         if (response.ok) {
+            if (typeof window !== 'undefined') {
             window.location.reload(false)
+            }
         }
         }
     async function sluggify(e) {

@@ -1,15 +1,15 @@
-import './featured.css'
+
 import SponsoredCompany from '../sponsoredCompany/SponsoredCompany'
 
 export default function Featured(props) {
-  let featured = props.featured.agencies
+  let featured = props.featured?.agencies
   return (
     <div className='Featured'>
       <h2 className='helvetica featuredTitle text-center'><span className='blue'>Agences </span>en vedette</h2>
       <div className='container'>
         {/*large and medium screens*/}
         <div className='row d-flex justify-content-center'>
-        {featured.map((agency, index) => {
+        {featured?.map((agency, index) => {
                 let name = ''
                 if (agency.name.includes('-')) {
                   name = agency.name.substring(0, agency.name.indexOf("-"))

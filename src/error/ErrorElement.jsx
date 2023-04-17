@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'next/link'
 
 export default function ErrorElement() {
   return (
@@ -10,7 +10,7 @@ export default function ErrorElement() {
     <p className="lead">
     la page que vous recherchez actuellement n'existe pas ou est temporairement indisponible.
       </p>
-    <Link to="/storyscope" className="btn btn-primary">Revenir à StoryScope</Link>
+    <Link href="/storyscope" className="btn btn-primary">Revenir à StoryScope</Link>
 </div>
 </div>
   )

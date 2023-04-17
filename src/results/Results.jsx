@@ -1,5 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react'
-import './results.css'
+import React, { useState, useEffect } from 'react'
 import {Helmet} from "react-helmet";
 import Company from '../company/Company'
 import { addReview, getReviews } from '../utils/api'

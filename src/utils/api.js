@@ -1,7 +1,5 @@
 
-
 let env = 'https://storyscope.storystellar.com'
-
 export async function getCategories() {
     const response = await fetch(env + '/api/category', {
         method: "GET" 
@@ -9,7 +7,8 @@ export async function getCategories() {
     if (!response.ok) {
         throw new Error({ message: 'Failed to fetch posts.', status:500});
     }
-    return response.json();
+    const res = await response.json()
+    return res;
 }
 
 export async function getCategory(slug) {
@@ -53,7 +52,8 @@ export async function getFeaturedAgencies() {
     if (!response.ok) {
         throw new Error({ message: 'Failed to fetch posts.', status:404});
     }
-    return response.json();
+    const res = await response.json()
+    return res;
 }
 
 

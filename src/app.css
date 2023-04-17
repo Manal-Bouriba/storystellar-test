@@ -1,8 +1,5 @@
-@font-face {
-    font-family: "Inter";
-    src: local("Inter"),
-     url("./fonts/Inter.ttf") format("truetype");
-    }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 /*fonts */ 
 .inter {

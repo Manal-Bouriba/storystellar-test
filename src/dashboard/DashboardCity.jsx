@@ -1,26 +1,25 @@
-import './dashboard.css'
 import { ProSidebarProvider, Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar'
 import TableCity from '../table/TableCity'
 import { getCategories, getCities } from '../utils/api'
-import { useLoaderData, Link } from 'react-router-dom'
-export default function DashboardCity() {
-  const loaderData = useLoaderData()
+import Link from 'next/link'
+export default function DashboardCity(props) {
+  console.log(props)
   return (
     <ProSidebarProvider>
       <div className='height'>
         <Sidebar>
           <h5 className='text-center mt-4'>STORYSCOPE ADMIN</h5>
             <Menu>
-              <MenuItem component={<Link to="/storyscope/admin/city" />}> Cities </MenuItem>
+              <MenuItem component={<Link href="/storyscope/admin/city" />}> Cities </MenuItem>
               <SubMenu label="Agencies">
-              {loaderData.categories.map((category, index) => {
-                        return <MenuItem component={<Link to={"/storyscope/admin/agency/" + category.slug}/>} key={index}> {category.name}</MenuItem>})}
+              {props.props?.categories.map((category, index) => {
+                        return <MenuItem component={<Link href={"/storyscope/admin/agency/" + category.slug}/>} key={index}> {category.name}</MenuItem>})}
      
               </SubMenu>
-              <MenuItem component={<Link to="/storyscope/admin/category" />}> Categories </MenuItem>
+              <MenuItem component={<Link href="/storyscope/admin/category" />}> Categories </MenuItem>
             </Menu>
         </Sidebar>
-        <TableCity data={loaderData}/>
+        <TableCity data={props.props}/>
       </div>
     </ProSidebarProvider>
   )
