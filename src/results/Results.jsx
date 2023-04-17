@@ -18,7 +18,7 @@ export default function Results(props) {
   const [loading, setLoading] = useState(false)
 
   let order = props.order
-  let display_name = props.category.category.display_name
+  let display_name = props.category.category.category.display_name.toLowerCase()
   async function handleRating(rate) {
     await addReview(rate)
     let refresh = await getReviews()
@@ -61,9 +61,9 @@ const {data, loading, hasMore} = useLazyLoad({triggerRef, slug, city, order})*/}
         <Helmet>
           <meta
             name="description"
-            content={"Vous avez besoin d'une agence de " + props.category.category.category.display_name + " ? Vous êtes au bon endroit ! Découverez les " + total + " meilleures agences de " + props.category.category.category.display_name + " à " +  city}
+            content={"Vous avez besoin d'une agence de " + display_name + " ? Vous êtes au bon endroit ! Découverez les " + total + " meilleures agences de " + display_name + " à " +  city}
           />
-          <title>{'Les ' + total  + ' meilleurs agences ' + props.category.category.category.display_name +  ' à ' + city}</title>
+          <title>{'Les ' + total  + ' meilleurs agences ' + display_name +  ' à ' + city}</title>
         </Helmet>
       <StructuredData
         type='Product'
