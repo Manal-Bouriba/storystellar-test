@@ -64,7 +64,7 @@ export default function Filters(props) {
                 </button>
                 <div className="dropdown-content">
                 {categories.map((category, index) => (
-                  <a key={index} href={'/storyscope/' +category.slug + '/paris'}> {category.name} </a>
+                  <a key={index} href={'/storyscope/' + category.slug + '/paris'}> {category.name} </a>
               ))}
                     
 

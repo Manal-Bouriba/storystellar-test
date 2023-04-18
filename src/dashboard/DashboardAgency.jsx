@@ -10,13 +10,13 @@ export default function DashboardAgency(props) {
         <Sidebar>
           <h5 className='text-center mt-4'>STORYSCOPE ADMIN</h5>
             <Menu>
-              <MenuItem component={<Link href="/storyscope/admin/city" />}> Cities </MenuItem>
+              <MenuItem component={<Link href="/admin/city" />}> Cities </MenuItem>
               <SubMenu label="Agencies">
               {props.props.categories.map((category, index) => {
-                        return <MenuItem component={<Link href={"/storyscope/admin/agency/" + category.slug}/>} key={index}> {category.name}</MenuItem>})}
+                        return <MenuItem component={<Link href={"/admin/agency/" + category.slug}/>} key={index}> {category.name}</MenuItem>})}
      
           </SubMenu>
-              <MenuItem component={<Link href="/storyscope/admin/category" />}> Categories </MenuItem>
+              <MenuItem component={<Link href="/admin/category" />}> Categories </MenuItem>
             </Menu>
         </Sidebar>
         <TableAgency data={props.props.agencies}/>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router'
-import CategoryPage from '../../../src/categoryPage/CategoryPage'
-import { getCategories, getCategory, getCities, getCity, getReviews } from '../../../src/utils/api'
+import CategoryPage from '../../src/categoryPage/CategoryPage'
+import { getCategories, getCategory, getCities, getCity, getReviews } from '../../src/utils/api'
 
 export default function Category({result}) {
   const router = useRouter()

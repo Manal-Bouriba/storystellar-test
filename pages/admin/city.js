@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router'
-import DashboardCity from '../../../src/dashboard/DashboardCity'
-import { getCategories, getCities } from '../../../src/utils/api'
+import DashboardCity from '../../src/dashboard/DashboardCity'
+import { getCategories, getCities } from '../../src/utils/api'
 
 export default function CityAdmin({result}) {
   const router = useRouter()
