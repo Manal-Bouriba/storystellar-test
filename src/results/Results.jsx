@@ -56,7 +56,7 @@ const {data, loading, hasMore} = useLazyLoad({triggerRef, slug, city, order})*/}
   let total = totalPages*6
   let dataSet = new UniqueSet(data)
   let name = props.category.category.category.name
-  let title = 'Les ' + total  + ' Meilleures Agences de' + props.category.category.category.display_name +  ' à ' + city
+  let title = 'Les ' + total  + ' Meilleures Agences de ' + props.category.category.category.display_name +  ' à ' + city
   return (
     <div>
         <Helmet>
