@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router'
-import DashboardAgency from '../../../../src/dashboard/DashboardAgency'
-import { getCategories, getAgenciesAll} from '../../../../src/utils/api'
+import DashboardAgency from '../../../src/dashboard/DashboardAgency'
+import { getCategories, getAgenciesAll} from '../../../src/utils/api'
 
 export default function CityAdmin({result}) {
   const router = useRouter()

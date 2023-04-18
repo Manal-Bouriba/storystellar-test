@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router'
-import DashboardCategory from '../../../src/dashboard/DashboardCategory'
+import DashboardCategory from '../../src/dashboard/DashboardCategory'
 
 export default function CategoryAdmin({result}) {
   const router = useRouter()
