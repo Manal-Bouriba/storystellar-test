@@ -14,7 +14,7 @@ import '../src/sponsoredCompany/sponsoredCompany.css'
 import '../src/app.css'
 import { Inter } from 'next/font/google'
 import { useEffect } from "react";
-
+import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'] , weight: ['400', '700'],})
 
 
@@ -30,6 +30,23 @@ export default function App({ Component, pageProps }) {
       .inter {
         font-family: ${inter.style.fontFamily};
       }
-    `}</style><Component {...pageProps} /></>)
+    `}
+    </style>
+        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-L1X0Q5P47T"/>
+        <Script
+        id='google-analytics'
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+        __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-L1X0Q5P47T', {
+              page_path: window.location.pathname,
+              });
+            `,
+            }}
+        />
+        <Component {...pageProps} /></>)
 
 }
