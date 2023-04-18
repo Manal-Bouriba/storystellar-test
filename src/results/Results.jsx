@@ -56,6 +56,7 @@ const {data, loading, hasMore} = useLazyLoad({triggerRef, slug, city, order})*/}
   let total = totalPages*6
   let dataSet = new UniqueSet(data)
   let name = props.category.category.category.name
+  let title = 'Les ' + total  + ' Meilleures Agences ' + props.category.category.category.display_name +  ' à ' + city
   return (
     <div>
         <Helmet>
@@ -63,7 +64,7 @@ const {data, loading, hasMore} = useLazyLoad({triggerRef, slug, city, order})*/}
             name="description"
             content={"Vous avez besoin d'une agence de " + display_name + " ? Vous êtes au bon endroit ! Découverez les " + total + " meilleures agences de " + display_name + " à " +  city}
           />
-          <title>{'Les ' + total  + ' meilleurs agences ' + display_name +  ' à ' + city}</title>
+          <title>{title.replace('audio', 'Audio')}</title>
         </Helmet>
       <StructuredData
         type='Product'
