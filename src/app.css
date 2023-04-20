@@ -3,11 +3,11 @@
 
 /*fonts */ 
 .inter {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif !important;
 }
 
 .helvetica {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif !important;
     font-style: normal;
 }
 /*colors*/

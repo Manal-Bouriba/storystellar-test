@@ -15,7 +15,7 @@
     height: 62.99px;
     margin-left: 20.5px;
     margin-bottom: 10px;
-
+    box-shadow: none !important;
 }
 
 .no-deco {
@@ -25,7 +25,7 @@
 
 .no-deco-card {
     text-decoration: none;
-    color: black;
+    color: black !important;
     display:block;
     width: 286.14px !important;
     height: 163.36px;
@@ -34,7 +34,16 @@
     margin-bottom: 30px;
 }
 
+.no-deco-card :hover{
+    color: black !important;
+    text-decoration: none !important;
+    box-shadow: 5px 5px 26.1434px 1.5686px rgba(14, 139, 255, 0.445);
+
+}
+
+
 .crd-txt {
+    box-shadow: none !important;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
