@@ -1,11 +1,11 @@
 import { Rating } from 'react-simple-star-rating'
+import InitialsAvatar from 'react-initials-avatar';
 const readonly = true
 const size = 17.25
 export default function Company(props) {
   return (
     <div className='card text-center border-0 px-0 my-4'>
-
-        <img className="img-top mx-auto mt-4" src={props.logo} alt="companylogo"/>
+        {props.logo? <img className="img-top mx-auto mt-4" src={props.logo} alt="companylogo"/> : <InitialsAvatar className='initials-avatar mx-auto mt-4' name={props.companyName}/>}
         <div className="card-body px-0">
             <h5 className="card-title mb-2">{props.companyName}</h5>
             <p className="card-text my-2">{props.location}</p>

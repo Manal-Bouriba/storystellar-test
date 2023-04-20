@@ -16,6 +16,7 @@
     "react-google-structured-data": "^3.0.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.8.0",
+    "react-initials-avatar": "^1.1.2",
     "react-pro-sidebar": "^1.0.0",
     "react-simple-star-rating": "^5.1.7",
     "serve": "^14.2.0",
