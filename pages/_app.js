@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }) {
   return(    <>
     <style jsx global>{`
       .inter {
-        font-family: ${inter.style.fontFamily};
+        font-family: ${inter.style.fontFamily} !important;
       }
     `}
     </style>
