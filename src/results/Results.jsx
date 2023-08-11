@@ -58,7 +58,7 @@ const {data, loading, hasMore} = useLazyLoad({triggerRef, slug, city, order})*/}
   let name = props.category.category.category.name
   let title = 'Les ' + total  + ' Meilleures Agences de ' + props.category.category.category.display_name +  ' à ' + city
   return (
-    <div>
+    <div className='results'>
         <Helmet>
           <meta
             name="description"
@@ -105,7 +105,7 @@ const {data, loading, hasMore} = useLazyLoad({triggerRef, slug, city, order})*/}
               }
             )}
         </div>
-        <div className={ "text-center "+ (!loading ? 'd-none' : 'd-block') }>Chargement...</div>
+        <div className={ "loading text-center "+ (!loading ? 'd-none' : 'd-block') }>Chargement...</div>
         {/*<div ref={triggerRef} className={ "text-center" + (hasMore ? 'd-none' : 'd-block')}></div>*/}
         <a role='button' className={(pageNum > totalPages || loading? 'd-none': 'd-block')} onClick={()=>{if (pageNum<=totalPages) { loadMore(slug, city, pageNum, order)}}}>Afficher plus</a>
         {/*<div className={ "text-center "+ (!hasMore ? 'd-none' : 'd-block') }>Loading...</div>

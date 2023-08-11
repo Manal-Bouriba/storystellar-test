@@ -1,3 +1,7 @@
 .count {
     font-size: 25px;
 }
+
+.loading {
+    min-height: 200px;
+}
