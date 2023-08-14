@@ -59,7 +59,7 @@ export default function Filters(props) {
             <div className="drop-down col-md-4 mb-4">
             <button className="dropbtn">
                     <div className='d-flex justify-content-between align-items-center'>
-                        <span className='inter'>{props.category.display_name}</span>  <span className='arrow-bottom'><BsFillCaretDownFill size={13}/></span>
+                        <span className='inter'>{props.category.name}</span>  <span className='arrow-bottom'><BsFillCaretDownFill size={13}/></span>
                     </div>
                 </button>
                 <div className="dropdown-content">
