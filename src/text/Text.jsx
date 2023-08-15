@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function Text(props) {
-    console.log(props.category)
     if (props.category === 'Agence de production audiovisuelle') {
         return (
             <div className='container mt-4'>

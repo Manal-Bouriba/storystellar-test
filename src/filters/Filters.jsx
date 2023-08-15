@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {  useEffect} from 'react'
 import { BsFillCaretDownFill } from "react-icons/bs";
+import slugify from 'slugify';
 
 export default function Filters(props) {
   const [query, setQuery] = useState(props.city)
@@ -64,7 +65,7 @@ export default function Filters(props) {
                 </button>
                 <div className="dropdown-content">
                 {categories.map((category, index) => (
-                  <a key={index} href={'/storyscope/' + category.slug + '/paris'}> {category.name} </a>
+                  <a key={index} href={'/storyscope/' + category.slug + '/' + slugify(props.city)}> {category.name} </a>
               ))}
                     
 

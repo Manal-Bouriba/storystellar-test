@@ -6,6 +6,7 @@ import { Rating } from 'react-simple-star-rating'
 import StructuredData from 'react-google-structured-data'
 // import useLazyLoad from '../utils/useLazyLoad'
 import { getAgencies } from "../utils/api";
+import slugify from 'slugify';
 const UniqueSet = require('@sepiariver/unique-set'); 
 
 export default function Results(props) {
@@ -28,7 +29,7 @@ export default function Results(props) {
 
   async function loadMore(slug, city, pageNum, order) {
     setLoading(true)
-    let s = await getAgencies(slug, city, pageNum, order);
+    let s = await getAgencies(slug, slugify(city.toLowerCase()), pageNum, order);
     if (pageNum===1) {
       setData(s.agencies)
     }

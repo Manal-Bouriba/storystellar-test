@@ -5,7 +5,6 @@ import { useState } from 'react'
 import Text from '../text/Text'
 export default function CategoryPage(props) {
   const [order, setOrder] = useState('Best')
-  console.log(props.props.category.category)
 
   return (
     <div>
