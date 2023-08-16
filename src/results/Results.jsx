@@ -8,17 +8,30 @@ import StructuredData from 'react-google-structured-data'
 import { getAgencies } from "../utils/api";
 import slugify from 'slugify';
 const UniqueSet = require('@sepiariver/unique-set'); 
-
+let storystellar = {id:1, name:'Storystellar', logo:'https://storystellar.com/wp-content/uploads/2022/01/1572265180649.jpg', rating:5, reviews: 134, website: 'https://www.storystellar.com/?utm_source=GMBlisting&utm_medium=organic', 
+                    category: {name:'Agence de production audiovisuelle'}, city:{name:'Paris'}}
+                    let array = []
+  array.push(storystellar)
 export default function Results(props) {
+  let order = props.order
   let rating = props.rating
   const [reviews, setReviews] = useState(rating.rating)
   const [count, setCount] = useState(rating.count)
   const [pageNum, setPageNum] = useState(1)
   const [totalPages, setTotalPages] = useState(1)
-  const [data, setData] = useState([])
+  const [data, setData] = useState(()=>{
+    if (props.category.city === 'Paris') {
+      return []
+    } 
+    else if (props.category.category.category.id === 2 && props.category.city !=='Paris' ) {
+      if (order ==='AZ') return []
+      else {return array}
+    }
+
+  })
   const [loading, setLoading] = useState(false)
 
-  let order = props.order
+  
   let display_name = props.category.category.category.display_name.toLowerCase()
   async function handleRating(rate) {
     await addReview(rate)
@@ -30,8 +43,10 @@ export default function Results(props) {
   async function loadMore(slug, city, pageNum, order) {
     setLoading(true)
     let s = await getAgencies(slug, slugify(city.toLowerCase()), pageNum, order);
+    let res = [...array,...s.agencies]
     if (pageNum===1) {
-      setData(s.agencies)
+      if (city === 'Paris' || order === 'AZ') {setData(s.agencies)}
+      else setData(res)
     }
     else {
     setData([...data, ...s.agencies]) }
@@ -40,7 +55,6 @@ export default function Results(props) {
     setLoading(false)
   }
   useEffect(()=>{
-    setData([])
     loadMore(slug, city, pageNum, order)
   }, [])
   
