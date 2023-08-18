@@ -20,10 +20,10 @@ export default function Results(props) {
   const [pageNum, setPageNum] = useState(1)
   const [totalPages, setTotalPages] = useState(1)
   const [data, setData] = useState(()=>{
-    if (props.category.city === 'Paris') {
+    if (props.category.city === 'Paris' || props.category.category.category.name !== 'Agence de production audiovisuelle') {
       return []
     } 
-    else if (props.category.category.category.id === 2 && props.category.city !=='Paris' ) {
+    else if (props.category.category.category.name === 'Agence de production audiovisuelle' && props.category.city !=='Paris' ) {
       if (order ==='AZ') return []
       else {return array}
     }
@@ -45,7 +45,7 @@ export default function Results(props) {
     let s = await getAgencies(slug, slugify(city.toLowerCase()), pageNum, order);
     let res = [...array,...s.agencies]
     if (pageNum===1) {
-      if (city === 'Paris' || order === 'AZ') {setData(s.agencies)}
+      if (city === 'Paris' || order === 'AZ' || props.category.category.category.name !== 'Agence de production audiovisuelle') {setData(s.agencies)}
       else setData(res)
     }
     else {
