@@ -10,7 +10,7 @@ export default function CategoryPage(props) {
     <div>
         <Filters category={props.props.category.category} city={props.props.city} cities={props.props.cities} categories={props.props.categories} onOrder={setOrder} order={order}/>
         <Results category={props.props} order={order} rating={props.props.rating}/>
-        <Text category={props.props.category.category.name}/>
+        <Text category={props.props.category.category.name} city={props.props.city} cityText={props.props.text}/>
         <Footer/>
         
     </div>

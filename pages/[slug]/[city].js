@@ -17,6 +17,6 @@ export async function getServerSideProps(context) {
         let cities = await getCities()
         let rating = await getReviews()
         let res = await getCategory(category)
-        let result = {city: cityobj.city.name, category: res, categories: categoriesList, cities: cities, rating: rating}
+        let result = {city: cityobj.city.name, category: res, categories: categoriesList, cities: cities, rating: rating, text: cityobj.city.text}
         return {props:{result}}
 }

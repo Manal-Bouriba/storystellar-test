@@ -1,8 +1,9 @@
 import React from 'react'
 
 export default function Text(props) {
+    let result
     if (props.category === 'Agence de production audiovisuelle') {
-        return (
+        result = 
             <div className='container mt-4'>
                 <h2 className='mt-5'>C'est quoi une agence de production audiovisuelle?</h2>
                 <p className='mx-4'>
@@ -55,52 +56,52 @@ export default function Text(props) {
                 <br/><b>Chimie et relation de travail :</b> Il est essentiel de se sentir à l'aise et en confiance avec l'agence de production audiovisuelle que vous choisissez. La création de contenus audiovisuels peut être un processus collaboratif et créatif, il est donc important d'établir une bonne relation de travail.
                 </p>
             </div>
-        )
+        
     }
     else if (props.category === 'Agence Social Media') {
-        return(
-        <div className='container mt-4'>
-            <h2 className='mt-5'>C'est quoi une agence de social media?</h2>
-            <p className='mx-4'>
-            Une agence de médias sociaux est une entreprise spécialisée dans la gestion et l'optimisation de la présence en ligne d'une marque, d'une entreprise ou d'un individu sur les plateformes de médias sociaux. Son objectif principal est d'utiliser ces canaux de communication numérique pour renforcer la notoriété de la marque, accroître l'engagement des utilisateurs, générer du trafic vers le site web et, éventuellement, stimuler les ventes.
-            <br/> Les agences de médias sociaux offrent une gamme de services qui peuvent inclure la création et la gestion de profils sur les réseaux sociaux tels que Facebook, Twitter, Instagram, LinkedIn, YouTube, etc. Elles peuvent également s'occuper de la création de contenu, de la planification et de la diffusion de campagnes publicitaires sur les médias sociaux, de la surveillance de la réputation en ligne, de l'analyse des données et des résultats, ainsi que de l'interaction avec les utilisateurs et les clients potentiels.
-            <br/>Ces agences travaillent en étroite collaboration avec leurs clients pour comprendre leurs objectifs commerciaux et développer une stratégie de médias sociaux adaptée à leurs besoins spécifiques. Elles peuvent également fournir des conseils et des recommandations sur les meilleures pratiques en matière de médias sociaux, les tendances émergentes et les nouvelles fonctionnalités des différentes plateformes.
-            </p>
-            <h2 className='mt-5'>Quels sont les avantages de faire appel à une agence de médias sociaux ?</h2>
-            <p className='mx-4'>Faire appel à une agence de médias sociaux présente plusieurs avantages pour les entreprises ou les individus souhaitant renforcer leur présence en ligne. Voici quelques-uns des principaux avantages :
-            <br/><b>Expertise spécialisée :</b> Les agences de médias sociaux disposent d'une expertise approfondie dans le domaine des médias sociaux. Elles connaissent les meilleures pratiques, les tendances émergentes, les algorithmes des plateformes et les stratégies efficaces pour atteindre les objectifs de leurs clients.
-            <br/><b>Gain de temps :</b> Gérer efficacement les médias sociaux demande du temps et des ressources. En confiant cette tâche à une agence, vous pouvez vous concentrer sur d'autres aspects de votre entreprise, tandis que des professionnels se chargent de la gestion de vos profils et de vos campagnes sur les réseaux sociaux.
-            <br/><b>Création de contenu de qualité : </b>Les agences de médias sociaux sont spécialisées dans la création de contenu adapté aux différentes plateformes. Elles peuvent produire du contenu attrayant et engageant, en utilisant des formats variés tels que des images, des vidéos, des infographies, etc., pour capter l'attention de votre audience.
-            <br/><b>Stratégie efficace :</b> Une agence de médias sociaux travaillera avec vous pour développer une stratégie sur mesure en fonction de vos objectifs commerciaux. Elles analyseront votre marché cible, étudieront vos concurrents et mettront en place des actions ciblées pour maximiser votre visibilité, générer de l'engagement et atteindre vos objectifs de marketing.
-            <br/><b>Suivi et analyse des performances :</b> Les agences de médias sociaux utilisent des outils d'analyse avancés pour suivre les performances de vos campagnes et de vos publications. Elles peuvent fournir des rapports détaillés sur les indicateurs clés tels que l'engagement, le nombre de followers, le trafic généré, les conversions, etc. Ces informations vous permettent d'évaluer l'efficacité de votre présence sur les médias sociaux et d'apporter des ajustements si nécessaire.
-            <br/><b>Réactivité et veille :</b> Les médias sociaux évoluent rapidement, avec de nouvelles fonctionnalités, des tendances changeantes et des mises à jour d'algorithmes. Les agences de médias sociaux se tiennent constamment informées des dernières évolutions et sont en mesure de réagir rapidement pour adapter vos stratégies et vos actions en conséquence.
-            </p>
-            <h2 className='mt-5'>Quels sont les autres services que les agences de médias sociaux peuvent offrir ?</h2>
-            <p className='mx-4'>En plus de la gestion des médias sociaux, les agences spécialisées dans ce domaine peuvent offrir une gamme de services complémentaires pour aider les entreprises à atteindre leurs objectifs de marketing en ligne. Voici quelques-uns des autres services couramment proposés par les agences de médias sociaux :
-            <br/><b>Stratégie de marketing numérique : </b>Les agences de médias sociaux peuvent élaborer une stratégie de marketing numérique globale en intégrant les médias sociaux dans un plan d'action plus vaste. Elles peuvent vous aider à définir vos objectifs, à identifier votre public cible, à choisir les canaux de communication appropriés et à élaborer des campagnes cohérentes pour maximiser l'impact de votre présence en ligne.
-            <br/><b>Gestion de la réputation en ligne : </b>Les agences de médias sociaux peuvent surveiller et gérer votre réputation en ligne en surveillant les mentions de votre marque, en répondant aux commentaires ou aux critiques et en s'assurant que votre image de marque est bien représentée sur les réseaux sociaux. Elles peuvent également mettre en place des stratégies de gestion des crises pour faire face aux situations délicates ou aux problèmes de réputation.
-            <br/><b>Publicité sur les médias sociaux : </b>Les agences de médias sociaux peuvent gérer vos campagnes publicitaires sur les différentes plateformes sociales, telles que Facebook Ads, Instagram Ads, Twitter Ads, LinkedIn Ads, etc. Elles peuvent vous aider à définir vos objectifs publicitaires, à cibler votre audience, à créer des annonces percutantes et à optimiser vos dépenses publicitaires pour obtenir les meilleurs résultats.
-            <br/><b>Marketing d'influence : </b>Les agences de médias sociaux peuvent vous aider à collaborer avec des influenceurs pertinents dans votre domaine pour promouvoir votre marque, vos produits ou vos services. Elles peuvent identifier les influenceurs appropriés, gérer les partenariats, organiser des campagnes d'influence et mesurer les résultats de ces collaborations.
-            <br/><b>Veille concurrentielle : </b>Les agences de médias sociaux peuvent surveiller les activités de vos concurrents sur les médias sociaux, analyser leurs stratégies, leur engagement et leur contenu, et vous fournir des informations précieuses pour vous aider à prendre des décisions éclairées et à rester compétitif sur le marché.
-            <br/><b>Formation et conseil : </b>Certaines agences de médias sociaux proposent également des services de formation et de conseil pour les entreprises qui souhaitent renforcer leurs compétences en matière de médias sociaux en interne. Elles peuvent former votre équipe sur les meilleures pratiques, les outils d'analyse, les stratégies de contenu, etc., afin de les rendre autonomes dans la gestion de vos médias sociaux.
-            </p>
-            <h2 className='mt-5'>Quels sont les critères importants à considérer lors du choix d'une agence de médias sociaux?</h2>
-            <p className='mx-4'>
-            Lors du choix d'une agence de médias sociaux, il est important de prendre en compte plusieurs critères pour vous assurer de faire le bon choix. Voici quelques critères importants à considérer :
-            <br/><b>Expérience et expertise :</b> Vérifiez l'expérience de l'agence dans le domaine des médias sociaux. Combien d'années d'expérience ont-ils ? Ont-ils travaillé avec des clients dans votre secteur d'activité ? Recherchez des preuves de leur expertise, comme des études de cas ou des résultats tangibles obtenus pour leurs clients.
-            <br/><b>Réputation et références :</b> Faites des recherches sur la réputation de l'agence. Consultez les avis en ligne, recherchez des recommandations et demandez des références à l'agence elle-même. Parlez à leurs clients précédents pour obtenir des retours d'expérience concrets sur la qualité de leur travail et leur niveau de satisfaction.
-            <br/><b>Portefeuille et exemples de travail : </b>Demandez à l'agence de vous montrer des exemples de leur travail antérieur. Examinez leur portefeuille pour évaluer la qualité de leur création de contenu, leur style visuel, leur capacité à générer de l'engagement et leur adaptabilité aux différentes plateformes.
-            <br/><b>Services proposés :</b> Assurez-vous que l'agence propose les services spécifiques dont vous avez besoin. Vérifiez si elles offrent des services de gestion des médias sociaux, de publicité sur les réseaux sociaux, de marketing d'influence, de veille concurrentielle, etc. Choisissez une agence qui peut répondre à l'ensemble de vos besoins en matière de médias sociaux.
-            <br/><b>Stratégie et approche :</b> Discutez de la stratégie de l'agence pour atteindre vos objectifs de médias sociaux. Est-ce qu'ils comprennent bien votre entreprise et votre public cible ? Proposent-ils des stratégies personnalisées ou ont-ils une approche générique ? Recherchez une agence qui peut proposer une stratégie adaptée à vos besoins spécifiques.
-            <br/><b>Communication et transparence :</b> Évaluez la qualité de la communication de l'agence dès le début. Sont-ils réactifs à vos demandes ? Sont-ils transparents sur leurs processus, leurs tarifs et leurs résultats attendus ? Une bonne communication est essentielle pour établir une relation de confiance avec l'agence.
-            <br/><b>Mesure des résultats : </b>Renseignez-vous sur les outils d'analyse que l'agence utilise pour mesurer les performances des médias sociaux. Comment rapportent-ils les résultats ? Sont-ils en mesure de vous fournir des données précises sur l'engagement, la portée, les conversions, etc. ? Une agence fiable devrait être en mesure de vous fournir des rapports détaillés sur les résultats de leurs actions.
-            <br/><b>Budget : </b>Déterminez votre budget disponible pour les services de médias sociaux et demandez des propositions à plusieurs agences pour comparer les tarifs. Assurez-vous de choisir une agence qui offre un bon rapport qualité-prix et qui correspond à votre budget.
-            </p>
-        </div>
-        )
+        result = 
+            <div className='container mt-4'>
+                <h2 className='mt-5'>C'est quoi une agence de social media?</h2>
+                <p className='mx-4'>
+                Une agence de médias sociaux est une entreprise spécialisée dans la gestion et l'optimisation de la présence en ligne d'une marque, d'une entreprise ou d'un individu sur les plateformes de médias sociaux. Son objectif principal est d'utiliser ces canaux de communication numérique pour renforcer la notoriété de la marque, accroître l'engagement des utilisateurs, générer du trafic vers le site web et, éventuellement, stimuler les ventes.
+                <br/> Les agences de médias sociaux offrent une gamme de services qui peuvent inclure la création et la gestion de profils sur les réseaux sociaux tels que Facebook, Twitter, Instagram, LinkedIn, YouTube, etc. Elles peuvent également s'occuper de la création de contenu, de la planification et de la diffusion de campagnes publicitaires sur les médias sociaux, de la surveillance de la réputation en ligne, de l'analyse des données et des résultats, ainsi que de l'interaction avec les utilisateurs et les clients potentiels.
+                <br/>Ces agences travaillent en étroite collaboration avec leurs clients pour comprendre leurs objectifs commerciaux et développer une stratégie de médias sociaux adaptée à leurs besoins spécifiques. Elles peuvent également fournir des conseils et des recommandations sur les meilleures pratiques en matière de médias sociaux, les tendances émergentes et les nouvelles fonctionnalités des différentes plateformes.
+                </p>
+                <h2 className='mt-5'>Quels sont les avantages de faire appel à une agence de médias sociaux ?</h2>
+                <p className='mx-4'>Faire appel à une agence de médias sociaux présente plusieurs avantages pour les entreprises ou les individus souhaitant renforcer leur présence en ligne. Voici quelques-uns des principaux avantages :
+                <br/><b>Expertise spécialisée :</b> Les agences de médias sociaux disposent d'une expertise approfondie dans le domaine des médias sociaux. Elles connaissent les meilleures pratiques, les tendances émergentes, les algorithmes des plateformes et les stratégies efficaces pour atteindre les objectifs de leurs clients.
+                <br/><b>Gain de temps :</b> Gérer efficacement les médias sociaux demande du temps et des ressources. En confiant cette tâche à une agence, vous pouvez vous concentrer sur d'autres aspects de votre entreprise, tandis que des professionnels se chargent de la gestion de vos profils et de vos campagnes sur les réseaux sociaux.
+                <br/><b>Création de contenu de qualité : </b>Les agences de médias sociaux sont spécialisées dans la création de contenu adapté aux différentes plateformes. Elles peuvent produire du contenu attrayant et engageant, en utilisant des formats variés tels que des images, des vidéos, des infographies, etc., pour capter l'attention de votre audience.
+                <br/><b>Stratégie efficace :</b> Une agence de médias sociaux travaillera avec vous pour développer une stratégie sur mesure en fonction de vos objectifs commerciaux. Elles analyseront votre marché cible, étudieront vos concurrents et mettront en place des actions ciblées pour maximiser votre visibilité, générer de l'engagement et atteindre vos objectifs de marketing.
+                <br/><b>Suivi et analyse des performances :</b> Les agences de médias sociaux utilisent des outils d'analyse avancés pour suivre les performances de vos campagnes et de vos publications. Elles peuvent fournir des rapports détaillés sur les indicateurs clés tels que l'engagement, le nombre de followers, le trafic généré, les conversions, etc. Ces informations vous permettent d'évaluer l'efficacité de votre présence sur les médias sociaux et d'apporter des ajustements si nécessaire.
+                <br/><b>Réactivité et veille :</b> Les médias sociaux évoluent rapidement, avec de nouvelles fonctionnalités, des tendances changeantes et des mises à jour d'algorithmes. Les agences de médias sociaux se tiennent constamment informées des dernières évolutions et sont en mesure de réagir rapidement pour adapter vos stratégies et vos actions en conséquence.
+                </p>
+                <h2 className='mt-5'>Quels sont les autres services que les agences de médias sociaux peuvent offrir ?</h2>
+                <p className='mx-4'>En plus de la gestion des médias sociaux, les agences spécialisées dans ce domaine peuvent offrir une gamme de services complémentaires pour aider les entreprises à atteindre leurs objectifs de marketing en ligne. Voici quelques-uns des autres services couramment proposés par les agences de médias sociaux :
+                <br/><b>Stratégie de marketing numérique : </b>Les agences de médias sociaux peuvent élaborer une stratégie de marketing numérique globale en intégrant les médias sociaux dans un plan d'action plus vaste. Elles peuvent vous aider à définir vos objectifs, à identifier votre public cible, à choisir les canaux de communication appropriés et à élaborer des campagnes cohérentes pour maximiser l'impact de votre présence en ligne.
+                <br/><b>Gestion de la réputation en ligne : </b>Les agences de médias sociaux peuvent surveiller et gérer votre réputation en ligne en surveillant les mentions de votre marque, en répondant aux commentaires ou aux critiques et en s'assurant que votre image de marque est bien représentée sur les réseaux sociaux. Elles peuvent également mettre en place des stratégies de gestion des crises pour faire face aux situations délicates ou aux problèmes de réputation.
+                <br/><b>Publicité sur les médias sociaux : </b>Les agences de médias sociaux peuvent gérer vos campagnes publicitaires sur les différentes plateformes sociales, telles que Facebook Ads, Instagram Ads, Twitter Ads, LinkedIn Ads, etc. Elles peuvent vous aider à définir vos objectifs publicitaires, à cibler votre audience, à créer des annonces percutantes et à optimiser vos dépenses publicitaires pour obtenir les meilleurs résultats.
+                <br/><b>Marketing d'influence : </b>Les agences de médias sociaux peuvent vous aider à collaborer avec des influenceurs pertinents dans votre domaine pour promouvoir votre marque, vos produits ou vos services. Elles peuvent identifier les influenceurs appropriés, gérer les partenariats, organiser des campagnes d'influence et mesurer les résultats de ces collaborations.
+                <br/><b>Veille concurrentielle : </b>Les agences de médias sociaux peuvent surveiller les activités de vos concurrents sur les médias sociaux, analyser leurs stratégies, leur engagement et leur contenu, et vous fournir des informations précieuses pour vous aider à prendre des décisions éclairées et à rester compétitif sur le marché.
+                <br/><b>Formation et conseil : </b>Certaines agences de médias sociaux proposent également des services de formation et de conseil pour les entreprises qui souhaitent renforcer leurs compétences en matière de médias sociaux en interne. Elles peuvent former votre équipe sur les meilleures pratiques, les outils d'analyse, les stratégies de contenu, etc., afin de les rendre autonomes dans la gestion de vos médias sociaux.
+                </p>
+                <h2 className='mt-5'>Quels sont les critères importants à considérer lors du choix d'une agence de médias sociaux?</h2>
+                <p className='mx-4'>
+                Lors du choix d'une agence de médias sociaux, il est important de prendre en compte plusieurs critères pour vous assurer de faire le bon choix. Voici quelques critères importants à considérer :
+                <br/><b>Expérience et expertise :</b> Vérifiez l'expérience de l'agence dans le domaine des médias sociaux. Combien d'années d'expérience ont-ils ? Ont-ils travaillé avec des clients dans votre secteur d'activité ? Recherchez des preuves de leur expertise, comme des études de cas ou des résultats tangibles obtenus pour leurs clients.
+                <br/><b>Réputation et références :</b> Faites des recherches sur la réputation de l'agence. Consultez les avis en ligne, recherchez des recommandations et demandez des références à l'agence elle-même. Parlez à leurs clients précédents pour obtenir des retours d'expérience concrets sur la qualité de leur travail et leur niveau de satisfaction.
+                <br/><b>Portefeuille et exemples de travail : </b>Demandez à l'agence de vous montrer des exemples de leur travail antérieur. Examinez leur portefeuille pour évaluer la qualité de leur création de contenu, leur style visuel, leur capacité à générer de l'engagement et leur adaptabilité aux différentes plateformes.
+                <br/><b>Services proposés :</b> Assurez-vous que l'agence propose les services spécifiques dont vous avez besoin. Vérifiez si elles offrent des services de gestion des médias sociaux, de publicité sur les réseaux sociaux, de marketing d'influence, de veille concurrentielle, etc. Choisissez une agence qui peut répondre à l'ensemble de vos besoins en matière de médias sociaux.
+                <br/><b>Stratégie et approche :</b> Discutez de la stratégie de l'agence pour atteindre vos objectifs de médias sociaux. Est-ce qu'ils comprennent bien votre entreprise et votre public cible ? Proposent-ils des stratégies personnalisées ou ont-ils une approche générique ? Recherchez une agence qui peut proposer une stratégie adaptée à vos besoins spécifiques.
+                <br/><b>Communication et transparence :</b> Évaluez la qualité de la communication de l'agence dès le début. Sont-ils réactifs à vos demandes ? Sont-ils transparents sur leurs processus, leurs tarifs et leurs résultats attendus ? Une bonne communication est essentielle pour établir une relation de confiance avec l'agence.
+                <br/><b>Mesure des résultats : </b>Renseignez-vous sur les outils d'analyse que l'agence utilise pour mesurer les performances des médias sociaux. Comment rapportent-ils les résultats ? Sont-ils en mesure de vous fournir des données précises sur l'engagement, la portée, les conversions, etc. ? Une agence fiable devrait être en mesure de vous fournir des rapports détaillés sur les résultats de leurs actions.
+                <br/><b>Budget : </b>Déterminez votre budget disponible pour les services de médias sociaux et demandez des propositions à plusieurs agences pour comparer les tarifs. Assurez-vous de choisir une agence qui offre un bon rapport qualité-prix et qui correspond à votre budget.
+                </p>
+            </div>
+            
     }
     else if (props.category=== 'Agence branding') {
-        return(
+        result = 
             <div className='container mt-4'>
                 <h2 className='mt-5'> C'est quoi une agence de branding?</h2>
                 <p className='mx-4'>
@@ -141,10 +142,9 @@ export default function Text(props) {
                 <br/>En tenant compte de ces critères, vous serez en mesure de prendre une décision éclairée lors du choix d'une agence de branding qui correspond à vos besoins, à vos objectifs et à la personnalité de votre entreprise.
                 </p>
             </div>
-        )
     }
     else if (props.category === 'Agence de graphisme') {
-        return(
+        result = 
             <div className='mt-4 container'>
                 <h2 className='mt-5'>C'est quoi une agence de graphisme?</h2>
                 <p className='mx-4'>
@@ -184,10 +184,10 @@ export default function Text(props) {
                 <br/>En plus de ces compétences spécifiques, il est également important de considérer la réputation de l'agence, les témoignages de clients précédents et la qualité de leur service client. N'hésitez pas à demander des références ou à contacter des clients précédents pour obtenir des retours d'expérience.
                 </p>
             </div>
-        )
+        
     }
     else if (props.category === 'Agence RP') {
-        return(
+        result = 
             <div className='mt-4 container'>
                 <h2 className='mt-5'>C'est quoi une agence de Relations Presse?</h2>
                 <p className='mx-4'>
@@ -235,10 +235,10 @@ export default function Text(props) {
                 <br/>En prenant en compte ces critères, vous serez en mesure de comparer les agences de Relations Presse et de choisir celle qui correspond le mieux aux besoins et aux objectifs de votre organisation. N'hésitez pas à rencontrer plusieurs agences, à poser des questions et à demander des informations supplémentaires pour prendre une décision éclairée.
                 </p>
             </div>
-        )
+        
     }
     else if (props.category === 'Agence SEO') {
-        return(
+        result = 
             <div className='mt-4 container'>
                 <h2 className='mt-5'>C'est quoi une agence SEO?</h2>
                 <p className='mx-4'>
@@ -277,10 +277,10 @@ export default function Text(props) {
                 <br/>En tenant compte de ces critères, vous serez en mesure de sélectionner une agence SEO qui correspond le mieux à vos besoins et qui peut vous aider à atteindre vos objectifs de référencement naturel de manière efficace et durable.
                 </p>
             </div>
-        )
+        
     }
     else if (props.category === 'Agence de développement web') {
-        return(
+        result = 
             <div className='mt-4 container'>
                 <h2 className='mt-5'>C'est quoi une agence de développement web?</h2>
                 <p className='mx-4'>
@@ -339,10 +339,10 @@ export default function Text(props) {
                 <br/>En suivant ces étapes, vous serez en mesure de choisir une agence de développement web qui répondra le mieux à vos besoins et à vos objectifs.
                 </p>
             </div>
-        )
+        
     }
     else if (props.category === 'Agence de développement mobile') {
-        return(
+        result = 
             <div className='mt-4 container'>
                 <h2 className='mt-5'>C'est quoi une agence de développement mobile?</h2>
                 <p className='mx-4'>
@@ -384,6 +384,15 @@ export default function Text(props) {
                 <br/>En prenant en compte ces différents critères, vous serez en mesure de choisir une agence de développement mobile qui correspond le mieux à vos besoins, à votre projet et à votre budget. N'hésitez pas à prendre le temps de faire des recherches approfondies et à poser des questions avant de prendre votre décision finale.
                 </p>
             </div>
-        )
+        
     }
+    return (
+        <>
+        {result}
+        <div className='mt-4 container'>
+            <h2 className='mt-5'>Les entreprises à {props.city}</h2>
+            <p className='mx-4'> {props.cityText} </p>
+        </div>
+        </>
+    )
 }
