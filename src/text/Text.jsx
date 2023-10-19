@@ -4,9 +4,10 @@ export default function Text(props) {
     let result
     if (props.category === 'Agence de production audiovisuelle') {
         result = 
-            <div className='container mt-4'>
-                <h2 className='mt-5'>C'est quoi une agence de production audiovisuelle?</h2>
-                <p className='mx-4'>
+            <div className='container mt-4 px-5 helvetica '>
+                <div className='container'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>C'est quoi une agence de production audiovisuelle?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                     Une agence de production audiovisuelle est une entreprise spécialisée dans la création et la production de contenus audiovisuels tels que des films, des vidéos, des publicités, des émissions de télévision, des documentaires, des clips musicaux, etc. Elle joue un rôle clé dans toutes les étapes de la production, depuis la conception initiale jusqu'à la réalisation finale. <br/> 
                     Les agences de production audiovisuelle sont responsables de la planification, de la coordination et de l'exécution de projets audiovisuels. Elles peuvent travailler en étroite collaboration avec des clients tels que des entreprises, des marques, des agences de publicité, des diffuseurs, des artistes, des musiciens, des organismes gouvernementaux, des organisations à but non lucratif, etc. Les services offerts par une agence de production audiovisuelle peuvent inclure :
                     <br/><b>Développement de concepts :</b> L'agence aide à développer des idées créatives et des concepts pour les projets audiovisuels en fonction des besoins et des objectifs du client.
@@ -15,8 +16,8 @@ export default function Text(props) {
                     <br/><b>Post-production :</b> Cela comprend le montage vidéo, l'ajout d'effets spéciaux, l'étalonnage des couleurs, la conception sonore, le montage audio, la création de graphismes, la création de titres, etc.
                     <br/><b>Distribution :</b> Une fois le projet terminé, l'agence peut également aider à la distribution du contenu sur différents canaux tels que la télévision, le cinéma, les plateformes de streaming en ligne, les réseaux sociaux, etc.
                 </p>
-                <h2 className='mt-5'>Quels sont les types de contenus audiovisuels les plus couramment produits par les agences?</h2>
-                <p className='mx-4'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>Quels sont les types de contenus audiovisuels les plus couramment produits par les agences?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                     Les agences de production audiovisuelle peuvent produire une grande variété de contenus audiovisuels en fonction des besoins et des objectifs de leurs clients. Voici quelques-uns des types de contenus les plus couramment produits par ces agences : <br/>
                     <br/><b>Films et vidéos :</b> Cela peut inclure des courts métrages, des longs métrages, des vidéos promotionnelles, des vidéos d'entreprise, des vidéos explicatives, des vidéos de formation, des vidéos musicales, des vidéos événementielles, des vidéos virales, etc.
                     <br/><b>Publicités :</b> Les agences de production audiovisuelle sont souvent sollicitées pour créer des publicités télévisées, des publicités en ligne, des publicités cinéma, des publicités radio, des publicités sociales, etc. Elles travaillent à la fois sur des publicités destinées aux marques et aux entreprises, ainsi que sur des campagnes publicitaires pour des organismes gouvernementaux ou des organisations à but non lucratif.
@@ -24,8 +25,8 @@ export default function Text(props) {
                     <br/><b>Documentaires :</b> Les agences de production audiovisuelle peuvent également se spécialiser dans la production de documentaires. Cela peut inclure des documentaires sur des sujets variés tels que l'histoire, la nature, la science, la politique, les problèmes sociaux, les biographies, etc.
                     <br/><b>Émissions de télévision :</b> Certaines agences de production audiovisuelle travaillent sur des émissions de télévision, qu'il s'agisse de séries dramatiques, de comédies, de talk-shows, de jeux télévisés, de documentaires télévisés, de magazines télévisés, etc.
                 </p>
-                <h2 className='mt-5'>Quels sont les avantages de la production audiovisuelle par rapport à d'autres formes de marketing ?</h2>
-                <p className='mx-4'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>Quels sont les avantages de la production audiovisuelle par rapport à d'autres formes de marketing ?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 La production audiovisuelle offre plusieurs avantages distincts par rapport à d'autres formes de marketing. Voici quelques-uns des avantages clés de la production audiovisuelle :
                 <br/><b>Engagement émotionnel :</b> La production audiovisuelle a la capacité unique de susciter des émotions chez le public. Les images, les sons, la musique, les dialogues et les mouvements captent l'attention et créent une connexion émotionnelle plus forte avec le spectateur. Cela permet de transmettre des messages de manière plus mémorable et impactante.
                 <br/><b>Puissance de narration :</b> Les contenus audiovisuels offrent un espace idéal pour raconter des histoires. Ils permettent de créer des narrations captivantes et de développer des personnages, ce qui facilite la transmission d'un message ou d'une valeur de marque de manière plus profonde et plus engageante.
@@ -34,8 +35,8 @@ export default function Text(props) {
                 <br/><b>Adaptabilité et créativité :</b> Les possibilités créatives de la production audiovisuelle sont vastes. Les agences peuvent utiliser des techniques cinématographiques, des effets spéciaux, des animations, des graphismes, des montages, etc., pour créer des contenus uniques et mémorables. Cela permet de se démarquer de la concurrence et de captiver l'attention du public.
                 <br/><b>Partage viral : </b>Les contenus audiovisuels ont un fort potentiel de partage viral sur les réseaux sociaux et autres plateformes en ligne. S'ils sont percutants, divertissants ou informatifs, ils peuvent se propager rapidement et atteindre un public beaucoup plus large que prévu, ce qui favorise la notoriété de la marque.
                 </p>
-                <h2 className='mt-5'>Comment peuvent des agences de production audiovisuelle aider les entreprise pour leur croissance</h2>
-                <p className='mx-4'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>Comment peuvent des agences de production audiovisuelle aider les entreprise pour leur croissance</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Les agences de production audiovisuelle peuvent jouer un rôle clé dans la croissance des entreprises en les aidant à atteindre leurs objectifs de communication, de marketing et de branding. Voici comment elles peuvent contribuer à la croissance des entreprises :
                 <br/><b>Création de contenus attrayants :</b> Les agences de production audiovisuelle peuvent produire des contenus vidéo et audiovisuels attrayants et percutants qui captent l'attention du public cible. Ces contenus peuvent être utilisés pour promouvoir les produits, les services, l'image de marque ou les messages clés de l'entreprise.
                 <br/><b>Augmentation de la visibilité et de la notoriété :</b> Grâce à des vidéos promotionnelles, des publicités télévisées ou en ligne, des vidéos virales ou des contenus pour les réseaux sociaux, les agences de production audiovisuelle peuvent aider les entreprises à accroître leur visibilité et à atteindre un public plus large. Cela contribue à renforcer la notoriété de la marque et à attirer de nouveaux clients.
@@ -44,8 +45,8 @@ export default function Text(props) {
                 <br/><b>Diffusion de messages clés :</b> Les contenus audiovisuels permettent de transmettre des messages clés de manière concise et impactante. Les agences de production audiovisuelle peuvent aider à formuler et à communiquer les messages importants de l'entreprise de manière efficace, en utilisant des techniques narratives, visuelles et sonores appropriées.
                 <br/><b>Adéquation avec les tendances du marché :</b> Les agences de production audiovisuelle sont conscientes des dernières tendances dans le domaine de la vidéo et de l'audiovisuel. Elles peuvent conseiller les entreprises sur les formats et les styles de contenus les plus pertinents pour atteindre leur public cible et rester compétitives sur le marché.
                 </p>
-                <h2 className='mt-5'>Quels sont les critères importants à considérer lors du choix d'une agence de production audiovisuelle?</h2>
-                <p className='mx-4'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>Quels sont les critères importants à considérer lors du choix d'une agence de production audiovisuelle?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Lors du choix d'une agence de production audiovisuelle, il est important de prendre en compte plusieurs critères pour trouver celle qui répondra le mieux à vos besoins spécifiques. Voici quelques critères importants à considérer :
                 <br/><b>Expérience et portfolio :</b> Vérifiez l'expérience globale de l'agence ainsi que son portfolio de travaux précédents. Cela vous donnera un aperçu de leur expertise, de leur style, et de leur capacité à produire des contenus de qualité.
                 <br/><b>Réputation et références :</b> Renseignez-vous sur la réputation de l'agence dans l'industrie. Consultez les avis des clients précédents et demandez des références pour obtenir des retours d'expérience concrets.
@@ -56,19 +57,21 @@ export default function Text(props) {
                 <br/><b>Chimie et relation de travail :</b> Il est essentiel de se sentir à l'aise et en confiance avec l'agence de production audiovisuelle que vous choisissez. La création de contenus audiovisuels peut être un processus collaboratif et créatif, il est donc important d'établir une bonne relation de travail.
                 </p>
             </div>
+            </div>
         
     }
     else if (props.category === 'Agence Social Media') {
         result = 
-            <div className='container mt-4'>
-                <h2 className='mt-5'>C'est quoi une agence de social media?</h2>
-                <p className='mx-4'>
+            <div className='container mt-4 px-5 helvetica '>
+                <div className='container'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>C'est quoi une agence de social media?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Une agence de médias sociaux est une entreprise spécialisée dans la gestion et l'optimisation de la présence en ligne d'une marque, d'une entreprise ou d'un individu sur les plateformes de médias sociaux. Son objectif principal est d'utiliser ces canaux de communication numérique pour renforcer la notoriété de la marque, accroître l'engagement des utilisateurs, générer du trafic vers le site web et, éventuellement, stimuler les ventes.
                 <br/> Les agences de médias sociaux offrent une gamme de services qui peuvent inclure la création et la gestion de profils sur les réseaux sociaux tels que Facebook, Twitter, Instagram, LinkedIn, YouTube, etc. Elles peuvent également s'occuper de la création de contenu, de la planification et de la diffusion de campagnes publicitaires sur les médias sociaux, de la surveillance de la réputation en ligne, de l'analyse des données et des résultats, ainsi que de l'interaction avec les utilisateurs et les clients potentiels.
                 <br/>Ces agences travaillent en étroite collaboration avec leurs clients pour comprendre leurs objectifs commerciaux et développer une stratégie de médias sociaux adaptée à leurs besoins spécifiques. Elles peuvent également fournir des conseils et des recommandations sur les meilleures pratiques en matière de médias sociaux, les tendances émergentes et les nouvelles fonctionnalités des différentes plateformes.
                 </p>
-                <h2 className='mt-5'>Quels sont les avantages de faire appel à une agence de médias sociaux ?</h2>
-                <p className='mx-4'>Faire appel à une agence de médias sociaux présente plusieurs avantages pour les entreprises ou les individus souhaitant renforcer leur présence en ligne. Voici quelques-uns des principaux avantages :
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>Quels sont les avantages de faire appel à une agence de médias sociaux ?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>Faire appel à une agence de médias sociaux présente plusieurs avantages pour les entreprises ou les individus souhaitant renforcer leur présence en ligne. Voici quelques-uns des principaux avantages :
                 <br/><b>Expertise spécialisée :</b> Les agences de médias sociaux disposent d'une expertise approfondie dans le domaine des médias sociaux. Elles connaissent les meilleures pratiques, les tendances émergentes, les algorithmes des plateformes et les stratégies efficaces pour atteindre les objectifs de leurs clients.
                 <br/><b>Gain de temps :</b> Gérer efficacement les médias sociaux demande du temps et des ressources. En confiant cette tâche à une agence, vous pouvez vous concentrer sur d'autres aspects de votre entreprise, tandis que des professionnels se chargent de la gestion de vos profils et de vos campagnes sur les réseaux sociaux.
                 <br/><b>Création de contenu de qualité : </b>Les agences de médias sociaux sont spécialisées dans la création de contenu adapté aux différentes plateformes. Elles peuvent produire du contenu attrayant et engageant, en utilisant des formats variés tels que des images, des vidéos, des infographies, etc., pour capter l'attention de votre audience.
@@ -76,8 +79,8 @@ export default function Text(props) {
                 <br/><b>Suivi et analyse des performances :</b> Les agences de médias sociaux utilisent des outils d'analyse avancés pour suivre les performances de vos campagnes et de vos publications. Elles peuvent fournir des rapports détaillés sur les indicateurs clés tels que l'engagement, le nombre de followers, le trafic généré, les conversions, etc. Ces informations vous permettent d'évaluer l'efficacité de votre présence sur les médias sociaux et d'apporter des ajustements si nécessaire.
                 <br/><b>Réactivité et veille :</b> Les médias sociaux évoluent rapidement, avec de nouvelles fonctionnalités, des tendances changeantes et des mises à jour d'algorithmes. Les agences de médias sociaux se tiennent constamment informées des dernières évolutions et sont en mesure de réagir rapidement pour adapter vos stratégies et vos actions en conséquence.
                 </p>
-                <h2 className='mt-5'>Quels sont les autres services que les agences de médias sociaux peuvent offrir ?</h2>
-                <p className='mx-4'>En plus de la gestion des médias sociaux, les agences spécialisées dans ce domaine peuvent offrir une gamme de services complémentaires pour aider les entreprises à atteindre leurs objectifs de marketing en ligne. Voici quelques-uns des autres services couramment proposés par les agences de médias sociaux :
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>Quels sont les autres services que les agences de médias sociaux peuvent offrir ?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>En plus de la gestion des médias sociaux, les agences spécialisées dans ce domaine peuvent offrir une gamme de services complémentaires pour aider les entreprises à atteindre leurs objectifs de marketing en ligne. Voici quelques-uns des autres services couramment proposés par les agences de médias sociaux :
                 <br/><b>Stratégie de marketing numérique : </b>Les agences de médias sociaux peuvent élaborer une stratégie de marketing numérique globale en intégrant les médias sociaux dans un plan d'action plus vaste. Elles peuvent vous aider à définir vos objectifs, à identifier votre public cible, à choisir les canaux de communication appropriés et à élaborer des campagnes cohérentes pour maximiser l'impact de votre présence en ligne.
                 <br/><b>Gestion de la réputation en ligne : </b>Les agences de médias sociaux peuvent surveiller et gérer votre réputation en ligne en surveillant les mentions de votre marque, en répondant aux commentaires ou aux critiques et en s'assurant que votre image de marque est bien représentée sur les réseaux sociaux. Elles peuvent également mettre en place des stratégies de gestion des crises pour faire face aux situations délicates ou aux problèmes de réputation.
                 <br/><b>Publicité sur les médias sociaux : </b>Les agences de médias sociaux peuvent gérer vos campagnes publicitaires sur les différentes plateformes sociales, telles que Facebook Ads, Instagram Ads, Twitter Ads, LinkedIn Ads, etc. Elles peuvent vous aider à définir vos objectifs publicitaires, à cibler votre audience, à créer des annonces percutantes et à optimiser vos dépenses publicitaires pour obtenir les meilleurs résultats.
@@ -85,8 +88,8 @@ export default function Text(props) {
                 <br/><b>Veille concurrentielle : </b>Les agences de médias sociaux peuvent surveiller les activités de vos concurrents sur les médias sociaux, analyser leurs stratégies, leur engagement et leur contenu, et vous fournir des informations précieuses pour vous aider à prendre des décisions éclairées et à rester compétitif sur le marché.
                 <br/><b>Formation et conseil : </b>Certaines agences de médias sociaux proposent également des services de formation et de conseil pour les entreprises qui souhaitent renforcer leurs compétences en matière de médias sociaux en interne. Elles peuvent former votre équipe sur les meilleures pratiques, les outils d'analyse, les stratégies de contenu, etc., afin de les rendre autonomes dans la gestion de vos médias sociaux.
                 </p>
-                <h2 className='mt-5'>Quels sont les critères importants à considérer lors du choix d'une agence de médias sociaux?</h2>
-                <p className='mx-4'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>Quels sont les critères importants à considérer lors du choix d'une agence de médias sociaux?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Lors du choix d'une agence de médias sociaux, il est important de prendre en compte plusieurs critères pour vous assurer de faire le bon choix. Voici quelques critères importants à considérer :
                 <br/><b>Expérience et expertise :</b> Vérifiez l'expérience de l'agence dans le domaine des médias sociaux. Combien d'années d'expérience ont-ils ? Ont-ils travaillé avec des clients dans votre secteur d'activité ? Recherchez des preuves de leur expertise, comme des études de cas ou des résultats tangibles obtenus pour leurs clients.
                 <br/><b>Réputation et références :</b> Faites des recherches sur la réputation de l'agence. Consultez les avis en ligne, recherchez des recommandations et demandez des références à l'agence elle-même. Parlez à leurs clients précédents pour obtenir des retours d'expérience concrets sur la qualité de leur travail et leur niveau de satisfaction.
@@ -97,14 +100,16 @@ export default function Text(props) {
                 <br/><b>Mesure des résultats : </b>Renseignez-vous sur les outils d'analyse que l'agence utilise pour mesurer les performances des médias sociaux. Comment rapportent-ils les résultats ? Sont-ils en mesure de vous fournir des données précises sur l'engagement, la portée, les conversions, etc. ? Une agence fiable devrait être en mesure de vous fournir des rapports détaillés sur les résultats de leurs actions.
                 <br/><b>Budget : </b>Déterminez votre budget disponible pour les services de médias sociaux et demandez des propositions à plusieurs agences pour comparer les tarifs. Assurez-vous de choisir une agence qui offre un bon rapport qualité-prix et qui correspond à votre budget.
                 </p>
+                </div>
             </div>
             
     }
     else if (props.category=== 'Agence branding') {
         result = 
-            <div className='container mt-4'>
-                <h2 className='mt-5'> C'est quoi une agence de branding?</h2>
-                <p className='mx-4'>
+            <div className='container mt-4 px-5 helvetica'>
+                <div className='container'>
+                <h2 className='mt-5mt-5 pl-5 font-weight-bold blue mx-5'> C'est quoi une agence de branding?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Une agence de branding est une agence spécialisée dans la création et la gestion de l'identité visuelle et de la stratégie de marque d'une entreprise. Le branding, ou la création d'une marque forte et cohérente, est essentiel pour différencier une entreprise de ses concurrents, établir une connexion émotionnelle avec les consommateurs et favoriser la fidélité à la marque.
                 <br/>Les agences de branding travaillent en étroite collaboration avec les entreprises pour développer une identité de marque distinctive et mémorable. Leur objectif est de créer une perception positive et cohérente de la marque à travers tous les points de contact avec les consommateurs, que ce soit le logo, le design graphique, les couleurs, les typographies, les messages clés, l'expérience utilisateur, etc.
                 <br/>Voici quelques services couramment proposés par les agences de branding :
@@ -117,8 +122,8 @@ export default function Text(props) {
                 <br/>En engageant une agence de branding, les entreprises peuvent bénéficier d'une expertise spécialisée pour développer une marque forte, cohérente et mémorable, ce qui peut avoir un impact significatif sur leur positionnement sur le marché et leur relation avec les consommateurs.
                 </p>
 
-                <h2 className='mt-5'>Quels sont les avantages de faire appel à une agence de branding?</h2>
-                <p className='mx-4'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>Quels sont les avantages de faire appel à une agence de branding?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Faire appel à une agence de branding présente plusieurs avantages pour une entreprise. Voici quelques-uns des principaux avantages :
                 <br/><b>Expertise spécialisée :</b> Les agences de branding sont des experts dans leur domaine. Elles possèdent une expérience et des compétences spécifiques en matière de stratégie de marque, de design graphique, de communication et de gestion de l'identité visuelle. Elles sont bien informées des tendances du marché et des meilleures pratiques, ce qui leur permet de fournir des conseils stratégiques et des solutions créatives pour renforcer votre marque.
                 <br/><b>Perception professionnelle et objectivité : </b>En travaillant avec une agence de branding, vous bénéficiez d'un regard neuf et objectif sur votre marque. L'agence peut vous aider à prendre du recul et à évaluer votre positionnement actuel, votre identité visuelle et votre stratégie de communication. Leur objectivité leur permet de vous conseiller de manière impartiale et de vous aider à prendre des décisions éclairées pour améliorer votre marque.
@@ -129,8 +134,8 @@ export default function Text(props) {
                 <br/>Il est important de noter que chaque agence de branding est unique, et leurs avantages peuvent varier en fonction de leurs compétences, de leur expérience et de leurs services spécifiques. Il est donc essentiel de bien choisir votre agence en fonction de vos besoins et de vos objectifs.
                 </p>
 
-                <h2 className='mt-5'>Quels sont les critères à prendre en compte pour choisir une agence de branding? </h2>
-                <p className='mx-4'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>Quels sont les critères à prendre en compte pour choisir une agence de branding? </h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Lors du choix d'une agence de branding, il est essentiel de prendre en compte plusieurs critères pour vous assurer de trouver le partenaire idéal pour votre entreprise. Voici quelques critères importants à considérer :
                 <br/><b>Expérience et expertise : </b>Vérifiez l'expérience de l'agence dans le domaine du branding. Combien d'années d'expérience ont-ils ? Ont-ils travaillé avec des clients dans votre secteur d'activité ? Recherchez des preuves de leur expertise, telles que des études de cas ou des exemples de travaux antérieurs, pour évaluer la qualité de leur travail et leur capacité à relever des défis spécifiques à votre secteur.
                 <br/><b>Portefeuille et exemples de travail :</b> Demandez à l'agence de vous montrer des exemples de leur travail antérieur. Examinez leur portefeuille pour évaluer la qualité de leur design graphique, leur créativité, leur capacité à créer des marques différenciées et mémorables. Assurez-vous que leur style et leur approche correspondent à vos attentes et à la personnalité de votre entreprise.
@@ -141,13 +146,15 @@ export default function Text(props) {
                 <br/><b>Budget : </b>Déterminez votre budget disponible pour les services de branding et demandez des propositions à plusieurs agences pour comparer les tarifs. Assurez-vous de choisir une agence qui offre un bon rapport qualité-prix et qui correspond à votre budget. Cependant, gardez à l'esprit que le branding est un investissement à long terme et qu'il vaut parfois la peine d'allouer un budget plus important pour obtenir des résultats de qualité.
                 <br/>En tenant compte de ces critères, vous serez en mesure de prendre une décision éclairée lors du choix d'une agence de branding qui correspond à vos besoins, à vos objectifs et à la personnalité de votre entreprise.
                 </p>
+                </div>
             </div>
     }
     else if (props.category === 'Agence de graphisme') {
         result = 
-            <div className='mt-4 container'>
-                <h2 className='mt-5'>C'est quoi une agence de graphisme?</h2>
-                <p className='mx-4'>
+            <div className='container mt-4 px-5 helvetica'>
+                <div className='container'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>C'est quoi une agence de graphisme?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Une agence de graphisme est une entreprise spécialisée dans la création de designs graphiques et visuels pour des clients. Elle offre des services de conception graphique professionnelle pour répondre aux besoins de communication visuelle des entreprises, des organisations et des particuliers.
                 Les agences de graphisme travaillent sur une variété de supports et de médias, tels que les logos, les emballages de produits, les brochures, les dépliants, les affiches, les publicités imprimées, les bannières web, les interfaces utilisateur, les designs d'application mobile, les illustrations, les infographies, etc. Leur objectif est de créer des designs attrayants, percutants et mémorables qui captent l'attention du public cible et transmettent efficacement le message souhaité.
                 Voici quelques services couramment proposés par les agences de graphisme :
@@ -160,8 +167,8 @@ export default function Text(props) {
                 <br/>Les agences de graphisme jouent un rôle essentiel dans la création d'une image de marque cohérente et professionnelle pour les entreprises. Leurs compétences en conception graphique, leur créativité et leur expertise technique leur permettent de créer des designs visuels qui suscitent l'intérêt du public et renforcent la communication visuelle d'une entreprise.
                 </p>
 
-                <h2 className='mt-5'> Quels sont les avantages de travailler avec une agence de graphisme plutôt qu'un studio de design?</h2>
-                <p className='mx-4'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'> Quels sont les avantages de travailler avec une agence de graphisme plutôt qu'un studio de design?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Travailler avec une agence de graphisme plutôt qu'un studio de design présente plusieurs avantages. Voici quelques-uns d'entre eux :
                 <br/><b>Gamme de services étendue :</b> Une agence de graphisme offre généralement une large gamme de services de conception graphique, ce qui peut être avantageux si vous avez besoin de différents types de designs ou si vous souhaitez une approche globale de votre communication visuelle. Ils peuvent s'occuper de la conception de votre logo, de l'identité visuelle, des supports imprimés, du design web, de l'illustration, etc. Vous pouvez ainsi bénéficier d'une solution complète pour tous vos besoins en matière de conception graphique, en travaillant avec une seule entité.
                 <br/><b>Expertise pluridisciplinaire :</b> Les agences de graphisme ont souvent une équipe pluridisciplinaire composée de graphistes, de directeurs artistiques, de concepteurs UX/UI et d'autres professionnels créatifs. Cette diversité d'expertise leur permet d'aborder les projets sous différents angles et de fournir des solutions créatives et innovantes. Ils peuvent intégrer différentes compétences pour créer une identité de marque cohérente et renforcer votre communication visuelle.
@@ -171,8 +178,8 @@ export default function Text(props) {
                 <br/><b>Gestion de projet évolutive :</b> Les agences de graphisme sont souvent en mesure de gérer des projets de différentes envergures. Que vous ayez besoin d'une petite tâche de conception ou d'une campagne de branding complète, elles peuvent s'adapter à vos besoins et fournir des solutions adaptées. Elles peuvent évoluer avec votre entreprise et vous accompagner dans vos futurs besoins en matière de conception graphique.
                 </p>
 
-                <h2 className='mt-5'>Quelles sont les compétences spécifiques que je devrais rechercher chez une agence de graphisme?</h2>
-                <p className='mx-4'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>Quelles sont les compétences spécifiques que je devrais rechercher chez une agence de graphisme?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Lorsque vous recherchez une agence de graphisme, il est important de prêter attention aux compétences spécifiques dont elle dispose. Voici quelques compétences clés à prendre en compte lors de votre recherche :
                 <br/><b>Conception graphique :</b> Assurez-vous que l'agence possède une solide expertise en conception graphique. Cela comprend la maîtrise des principes de conception, tels que la typographie, la composition, l'utilisation de la couleur, la mise en page, etc. Vérifiez leur portfolio pour évaluer la qualité de leur travail et leur style de conception.
                 <br/><b>Maîtrise des outils et logiciels :</b> Les agences de graphisme doivent être compétentes dans l'utilisation des outils et des logiciels de conception graphique. Les logiciels couramment utilisés incluent Adobe Photoshop, Illustrator, InDesign, Sketch, etc. Assurez-vous qu'ils maîtrisent ces outils et qu'ils sont à jour sur les dernières tendances et techniques en matière de conception graphique.
@@ -183,22 +190,24 @@ export default function Text(props) {
                 <br/><b>Expérience sectorielle pertinente :</b> Si vous travaillez dans un secteur spécifique, recherchez une agence qui a une expérience pertinente dans ce domaine. Elles comprendront mieux les besoins et les défis spécifiques à votre secteur et pourront créer des designs qui correspondent à votre public cible.
                 <br/>En plus de ces compétences spécifiques, il est également important de considérer la réputation de l'agence, les témoignages de clients précédents et la qualité de leur service client. N'hésitez pas à demander des références ou à contacter des clients précédents pour obtenir des retours d'expérience.
                 </p>
+                </div>
             </div>
         
     }
     else if (props.category === 'Agence RP') {
         result = 
-            <div className='mt-4 container'>
-                <h2 className='mt-5'>C'est quoi une agence de Relations Presse?</h2>
-                <p className='mx-4'>
+            <div className='container mt-4 px-5 helvetica'>
+                <div className='container'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>C'est quoi une agence de Relations Presse?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Une agence de Relations Presse, également appelée agence de Relations Publiques ou agence de Communication, est une entreprise spécialisée dans la gestion des relations entre une organisation et les médias. Son rôle principal est d'aider ses clients à communiquer efficacement avec les journalistes et les médias, dans le but d'obtenir une couverture médiatique positive et de gérer leur image de marque.
                 <br/>Les agences de Relations Presse travaillent en étroite collaboration avec leurs clients pour comprendre leurs objectifs de communication et développer des stratégies adaptées. Elles sont responsables de la rédaction et de la diffusion de communiqués de presse, qui sont des documents destinés à informer les médias sur les événements, les annonces ou les initiatives importantes de l'organisation.
                 <br/>En plus de la rédaction de communiqués de presse, les agences de Relations Presse peuvent organiser des conférences de presse, des rencontres avec les journalistes, des interviews, des reportages médiatiques et d'autres activités de relations publiques. Elles peuvent également conseiller leurs clients sur la gestion de crise et les aider à gérer les situations délicates sur le plan médiatique.
                 <br/>L'objectif principal d'une agence de Relations Presse est de générer une couverture médiatique positive pour ses clients, en mettant en avant leurs réussites, leurs innovations, leurs projets, leurs valeurs ou leurs expertises. Cette visibilité dans les médias peut contribuer à renforcer la notoriété et l'image de marque de l'organisation, à attirer l'attention des parties prenantes et à influencer l'opinion publique.
                 <br/>En résumé, une agence de Relations Presse est une entreprise spécialisée dans la gestion des relations entre une organisation et les médias, avec pour objectif d'obtenir une couverture médiatique positive et de renforcer l'image de marque de ses clients.
                 </p>
-                <h2 className='mt-5'>Quels sont les services généralement inclus dans les offres des agences de Relations Presse?</h2>
-                <p className='mx-4'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>Quels sont les services généralement inclus dans les offres des agences de Relations Presse?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Les services inclus dans les offres des agences de Relations Presse peuvent varier en fonction de l'agence et des besoins spécifiques de chaque client. Cependant, voici certains services généralement proposés par les agences de Relations Presse :
                 <br/><b>Stratégie de communication :</b> Les agences de Relations Presse peuvent élaborer une stratégie de communication globale en fonction des objectifs de l'organisation. Cela peut inclure l'identification des messages clés, la définition des publics cibles, la planification des actions de communication et l'établissement d'un calendrier pour les activités médiatiques.
                 <br/><b>Rédaction et diffusion de communiqués de presse :</b> Les agences de Relations Presse sont responsables de la rédaction professionnelle des communiqués de presse. Elles veillent à ce que les informations soient claires, pertinentes et adaptées aux médias. Elles se chargent également de la diffusion des communiqués de presse auprès des journalistes et des médias appropriés.
@@ -210,8 +219,8 @@ export default function Text(props) {
                 <br/>Il est important de noter que ces services peuvent varier en fonction des besoins spécifiques de l'organisation et des accords conclus avec l'agence de Relations Presse. Il est recommandé de discuter en détail des services inclus dans chaque offre lors des négociations avec l'agence pour s'assurer d'une compréhension claire des attentes et des responsabilités de chaque partie.
                 </p>
 
-                <h2 className='mt-5'>Quels sont les avantages pour une organisation de faire appel à une agence de Relations Presse?</h2>
-                <p className='mx-4'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>Quels sont les avantages pour une organisation de faire appel à une agence de Relations Presse?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Faire appel à une agence de Relations Presse peut offrir plusieurs avantages à une organisation. Voici quelques-uns des principaux bénéfices :
                 <br/><b>Expertise et expérience :</b> Les agences de Relations Presse sont composées de professionnels ayant une expertise et une expérience dans le domaine des relations avec les médias. Elles connaissent les pratiques et les attentes des journalistes, ainsi que les méthodes efficaces pour communiquer avec eux. Leur connaissance approfondie du paysage médiatique peut aider les organisations à obtenir une couverture médiatique pertinente et à maximiser leur visibilité.
                 <br/><b>Réseau de contacts :</b> Les agences de Relations Presse ont souvent établi des relations étroites avec les journalistes, les rédacteurs et les influenceurs. Elles disposent d'un réseau de contacts bien développé, ce qui peut faciliter l'accès aux médias et augmenter les chances d'obtenir une couverture médiatique. Ces contacts peuvent être précieux pour promouvoir les initiatives, les événements ou les annonces de l'organisation.
@@ -221,8 +230,8 @@ export default function Text(props) {
                 <br/>En résumé, faire appel à une agence de Relations Presse peut offrir des avantages tels qu'une expertise spécialisée, un réseau de contacts étendu, une visibilité accrue dans les médias, une gestion efficace des crises et des conseils stratégiques. Ces avantages peuvent aider une organisation à améliorer sa réputation, à atteindre ses objectifs de communication et à renforcer sa présence sur le marché.
                 </p>
                 
-                <h2 className='mt-5'>Comment choisir la meilleure agence de Relations Presse pour mon organisation?</h2>
-                <p className='mx-4'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>Comment choisir la meilleure agence de Relations Presse pour mon organisation?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Pour choisir la meilleure agence de Relations Presse pour votre organisation, voici quelques points à prendre en considération :
                 <br/><b>Comprenez vos besoins et objectifs :</b> Avant de commencer votre recherche, identifiez clairement vos besoins et objectifs en matière de relations presse. Quels sont les résultats que vous souhaitez obtenir ? Quels sont les domaines spécifiques dans lesquels vous avez besoin d'aide ? En ayant une vision claire de vos attentes, vous pourrez mieux évaluer les compétences et les services des agences.
                 <br/><b>Expérience et expertise :</b>  Vérifiez l'expérience et l'expertise des agences que vous envisagez. Demandez des informations sur leurs années d'expérience, les clients avec lesquels elles ont travaillé et les résultats qu'elles ont obtenus. Assurez-vous qu'elles ont une compréhension approfondie de votre secteur d'activité et des médias pertinents pour votre organisation.
@@ -235,13 +244,15 @@ export default function Text(props) {
                 <br/>En prenant en compte ces critères, vous serez en mesure de comparer les agences de Relations Presse et de choisir celle qui correspond le mieux aux besoins et aux objectifs de votre organisation. N'hésitez pas à rencontrer plusieurs agences, à poser des questions et à demander des informations supplémentaires pour prendre une décision éclairée.
                 </p>
             </div>
+            </div>
         
     }
     else if (props.category === 'Agence SEO') {
         result = 
-            <div className='mt-4 container'>
-                <h2 className='mt-5'>C'est quoi une agence SEO?</h2>
-                <p className='mx-4'>
+            <div className='container mt-4 px-5 helvetica'>
+                <div className='container'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>C'est quoi une agence SEO?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Une agence SEO (Search Engine Optimization) est une agence spécialisée dans l'optimisation des sites web pour les moteurs de recherche tels que Google, Bing, Yahoo, etc. Son objectif principal est d'améliorer la visibilité en ligne d'un site web et de générer un trafic organique de qualité en utilisant des techniques et des stratégies de référencement naturel.
                 Les services offerts par une agence SEO peuvent inclure :
                 <br/><b>Audit et analyse SEO :</b> L'agence effectue une analyse approfondie du site web pour identifier les problèmes techniques, les erreurs d'optimisation et les opportunités d'amélioration. Cela peut comprendre l'analyse des mots-clés, l'évaluation de la structure du site, l'examen de la convivialité et de la performance du site, ainsi que l'identification des problèmes de contenu.
@@ -253,8 +264,8 @@ export default function Text(props) {
                 <br/>En engageant une agence SEO, une entreprise ou un site web vise à améliorer sa visibilité en ligne, à augmenter le trafic organique qualifié, à obtenir de meilleurs classements dans les moteurs de recherche et à générer des résultats concrets en termes de croissance et de conversions.
                 </p>
 
-                <h2 className='mt-5'>Quels sont les avantages de faire appel à une agence SEO plutôt que de le faire soi-même?</h2>
-                <p className='mx-4'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>Quels sont les avantages de faire appel à une agence SEO plutôt que de le faire soi-même?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Faire appel à une agence SEO présente plusieurs avantages par rapport à la réalisation en interne. Voici quelques-uns des avantages les plus importants :
                 <br/><b>Expertise et connaissances spécialisées : </b>Les agences SEO sont composées d'experts qui possèdent une connaissance approfondie des meilleures pratiques en matière de référencement naturel. Ils sont constamment à jour sur les dernières tendances, les algorithmes des moteurs de recherche et les stratégies efficaces. Leur expertise leur permet d'identifier les opportunités d'optimisation, de résoudre les problèmes techniques et d'appliquer des stratégies avancées pour obtenir de meilleurs résultats.
                 <br/><b>Économie de temps et de ressources :</b> Le référencement naturel est un processus continu et exigeant en termes de temps et de ressources. En externalisant cette tâche à une agence SEO, vous pouvez vous concentrer sur vos activités principales et laisser les professionnels gérer les aspects techniques du référencement. Cela vous permet de gagner du temps et d'allouer vos ressources à d'autres priorités commerciales.
@@ -264,8 +275,8 @@ export default function Text(props) {
                 <br/><b>Suivi et analyse des performances :</b> Les agences SEO fournissent généralement des rapports détaillés sur les performances de votre site web, y compris les classements des mots-clés, le trafic organique, les conversions, etc. Ces rapports vous permettent de mesurer l'efficacité de vos efforts de référencement et d'identifier les domaines qui nécessitent des améliorations. Ils vous aident également à prendre des décisions éclairées pour optimiser votre stratégie.
                 <br/>Il est important de noter que chaque entreprise est unique, et les avantages spécifiques peuvent varier en fonction de vos besoins, de votre expertise interne et de votre budget. Avant de choisir une agence SEO, il est recommandé de faire des recherches approfondies, de demander des références et de discuter de vos objectifs avec plusieurs agences pour trouver celle qui correspond le mieux à vos besoins.
                 </p>
-                <h2 className='mt-5'>Quels sont les critères à prendre en compte lors de la recherche d'une agence SEO?</h2>
-                <p className='mx-4'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>Quels sont les critères à prendre en compte lors de la recherche d'une agence SEO?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Lors de la recherche d'une agence SEO, il est essentiel de prendre en compte plusieurs critères pour choisir celle qui répondra le mieux à vos besoins. Voici quelques critères importants à considérer :
                 <br/><b>Expérience et expertise : </b>Vérifiez l'expérience de l'agence SEO, notamment le nombre d'années d'activité et les clients avec lesquels elle a travaillé. Une agence ayant une solide expérience dans votre secteur d'activité peut mieux comprendre vos besoins spécifiques et apporter des solutions adaptées. Assurez-vous également que l'agence dispose d'une équipe d'experts compétents dans les différents aspects du référencement.
                 <br/><b>Réputation et références :</b> Faites des recherches sur la réputation de l'agence SEO en consultant les avis des clients existants ou en demandant des références. Une agence bien établie et fiable aura généralement des témoignages positifs et des références de clients satisfaits. N'hésitez pas à contacter certains de ces clients pour obtenir leurs retours d'expérience.
@@ -277,13 +288,15 @@ export default function Text(props) {
                 <br/>En tenant compte de ces critères, vous serez en mesure de sélectionner une agence SEO qui correspond le mieux à vos besoins et qui peut vous aider à atteindre vos objectifs de référencement naturel de manière efficace et durable.
                 </p>
             </div>
+            </div>
         
     }
     else if (props.category === 'Agence de développement web') {
         result = 
-            <div className='mt-4 container'>
-                <h2 className='mt-5'>C'est quoi une agence de développement web?</h2>
-                <p className='mx-4'>
+            <div className='container mt-4 px-5 helvetica'>
+                <div className='container'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>C'est quoi une agence de développement web?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Une agence de développement web est une entreprise spécialisée dans la création, la conception et le développement de sites web et d'applications web. Elle propose des services professionnels pour aider les entreprises et les particuliers à établir leur présence en ligne et à développer des solutions web personnalisées.
                 Les agences de développement web regroupent généralement une équipe de professionnels qualifiés dans différents domaines liés au développement web. Ces experts peuvent inclure des développeurs front-end, des développeurs back-end, des concepteurs UX/UI, des spécialistes en intégration, des spécialistes en bases de données, des spécialistes en sécurité et d'autres professionnels du web.
                 Voici quelques-unes des activités et des services couramment proposés par une agence de développement web :
@@ -296,8 +309,8 @@ export default function Text(props) {
                 <br/>En engageant une agence de développement web, vous pouvez bénéficier de l'expertise technique et créative de professionnels spécialisés dans le domaine. Ils peuvent vous aider à créer une présence en ligne efficace, à améliorer l'expérience utilisateur, à optimiser les performances de votre site et à développer des solutions web personnalisées pour répondre à vos besoins spécifiques.
                 </p>
 
-                <h2 className='mt-5'>Comment un site web peut-il augmenter la valeur de mon entreprise?</h2>
-                <p className='mx-4'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>Comment un site web peut-il augmenter la valeur de mon entreprise?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Un site web peut augmenter la valeur de votre entreprise de plusieurs manières :
                 <br/><b>Présence en ligne :</b> Avoir un site web professionnel permet à votre entreprise d'avoir une présence en ligne 24 heures sur 24, 7 jours sur 7. Cela vous permet d'être accessible à un public plus large, y compris des clients potentiels qui recherchent vos produits ou services en ligne. Une présence en ligne solide renforce la crédibilité de votre entreprise et vous permet de vous démarquer de la concurrence.
                 <br/><b>Expansion géographique :</b> Un site web vous permet d'étendre votre portée géographique au-delà de votre emplacement physique. Vous pouvez atteindre des clients potentiels dans d'autres régions, pays ou même à l'échelle mondiale. Cela ouvre de nouvelles opportunités de croissance et de développement pour votre entreprise.
@@ -310,8 +323,8 @@ export default function Text(props) {
                 <br/>En résumé, un site web bien conçu et fonctionnel peut augmenter la valeur de votre entreprise en élargissant votre audience, en améliorant votre visibilité en ligne, en générant des leads, en stimulant les ventes, en renforçant votre image de marque et en améliorant l'expérience client. Il s'agit d'un investissement stratégique qui peut avoir un impact significatif sur la croissance et le succès de votre entreprise.
                 </p>
 
-                <h2 className='mt-5'>Quels sont les avantages de faire appel à une agence de développement web plutôt que de créer un site web soi-même?</h2>
-                <p className='mx-4'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>Quels sont les avantages de faire appel à une agence de développement web plutôt que de créer un site web soi-même?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Faire appel à une agence de développement web présente plusieurs avantages par rapport à la création d'un site web soi-même. Voici quelques-uns des principaux avantages :
                 <br/><b>Expertise technique :</b> Les agences de développement web disposent d'une équipe d'experts techniques qualifiés dans différents domaines du développement web. Ils ont une connaissance approfondie des langages de programmation, des frameworks, des outils et des meilleures pratiques. Leur expertise leur permet de créer des sites web de haute qualité, fonctionnels et sécurisés, en utilisant les technologies les plus appropriées.
                 <br/><b>Conception professionnelle :</b> Une agence de développement web peut vous aider à concevoir une interface utilisateur (UI) attrayante et une expérience utilisateur (UX) optimisée. Ils ont une compréhension approfondie du design web, des principes de navigation, de l'ergonomie et de l'accessibilité. Ils peuvent créer un site web esthétiquement agréable, intuitif et adapté à votre public cible.
@@ -323,8 +336,8 @@ export default function Text(props) {
                 <br/>En résumé, une agence de développement web apporte une expertise technique, un design professionnel, des fonctionnalités avancées, un gain de temps, une optimisation pour les moteurs de recherche, un support technique et une crédibilité accrue. Ces avantages peuvent vous aider à obtenir un site web performant, attrayant et adapté à vos besoins spécifiques.
                 </p>
 
-                <h2 className='mt-5'> Comment choisir la meilleure agence de développement web pour mon projet?</h2>
-                <p className='mx-4'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'> Comment choisir la meilleure agence de développement web pour mon projet?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Pour choisir la meilleure agence de développement web pour votre projet, vous pouvez suivre ces étapes :
                 <br/><b>Définir vos besoins : </b>Avant de commencer votre recherche, clarifiez vos besoins et objectifs pour votre projet web. Quelles fonctionnalités souhaitez-vous inclure ? Quel est votre budget ? Quels sont les délais de réalisation ? Avoir une vision claire de votre projet vous aidera à trouver une agence qui correspond à vos attentes.
                 <br/><b>Faire des recherches :</b> Effectuez une recherche en ligne pour trouver des agences de développement web. Consultez leurs sites web, examinez leurs portfolios et lisez les témoignages de leurs clients. Vous pouvez également demander des recommandations à vos contacts professionnels ou rechercher des avis sur des plateformes spécialisées.
@@ -339,13 +352,14 @@ export default function Text(props) {
                 <br/>En suivant ces étapes, vous serez en mesure de choisir une agence de développement web qui répondra le mieux à vos besoins et à vos objectifs.
                 </p>
             </div>
-        
+            </div>
     }
     else if (props.category === 'Agence de développement mobile') {
         result = 
-            <div className='mt-4 container'>
-                <h2 className='mt-5'>C'est quoi une agence de développement mobile?</h2>
-                <p className='mx-4'>
+            <div className='container mt-4 px-5 helvetica'>
+                <div className='container'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>C'est quoi une agence de développement mobile?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Une agence de développement mobile est une entreprise spécialisée dans la création d'applications mobiles pour différents systèmes d'exploitation tels qu'iOS (pour les appareils Apple tels que l'iPhone et l'iPad) et Android (pour les appareils fonctionnant sous le système d'exploitation Android).
                 Les agences de développement mobile regroupent une équipe de professionnels comprenant des développeurs d'applications, des concepteurs d'interface utilisateur, des spécialistes en expérience utilisateur (UX), des testeurs, des chefs de projet, et d'autres experts techniques. Elles travaillent en étroite collaboration avec les entreprises et les clients pour développer des applications mobiles sur mesure répondant à leurs besoins spécifiques.
                 Les services proposés par une agence de développement mobile peuvent inclure :
@@ -358,8 +372,8 @@ export default function Text(props) {
                 <br/>Les agences de développement mobile sont souvent choisies par les entreprises qui souhaitent créer une application mobile sur mesure pour leur activité, mais qui n'ont pas les ressources ou les compétences internes pour le faire. Faire appel à une agence spécialisée offre l'avantage de bénéficier de l'expertise d'une équipe expérimentée dans le développement d'applications mobiles, ce qui permet d'obtenir des résultats de qualité et de rester à jour avec les dernières tendances et technologies mobiles.
                 </p>
 
-                <h2 className='mt-5'>Quels sont les avantages de faire appel à une agence de développement mobile plutôt que de développer en interne?</h2>
-                <p className='mx-4'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>Quels sont les avantages de faire appel à une agence de développement mobile plutôt que de développer en interne?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Faire appel à une agence de développement mobile plutôt que de développer en interne présente plusieurs avantages :
                 <br/><b>Expertise spécialisée : </b>Les agences de développement mobile sont des experts dans leur domaine. Elles disposent d'une équipe de professionnels expérimentés dans le développement d'applications mobiles, avec une connaissance approfondie des différentes plateformes et des meilleures pratiques. Elles sont à jour sur les dernières tendances, technologies et normes de l'industrie. En engageant une agence, vous bénéficiez de leur expertise spécialisée pour créer une application mobile de haute qualité.
                 <br/><b>Gain de temps :</b> Le développement d'applications mobiles demande du temps et des ressources considérables. En externalisant ce travail à une agence, vous pouvez vous concentrer sur votre activité principale et laisser les experts se charger du développement de l'application. Les agences ont l'expérience nécessaire pour gérer efficacement les projets de développement, ce qui permet de réduire les délais et de livrer l'application dans les meilleurs délais.
@@ -370,8 +384,8 @@ export default function Text(props) {
                 <br/>En résumé, faire appel à une agence de développement mobile offre l'avantage d'accéder à une expertise spécialisée, de gagner du temps et de réduire les coûts. Vous bénéficiez d'une équipe expérimentée, de ressources supplémentaires, de flexibilité et d'une meilleure qualité de développement. Cela vous permet de vous concentrer sur votre activité principale tout en vous assurant que votre application mobile est développée de manière professionnelle et efficace.
                 </p>
 
-                <h2 className='mt-5'>Comment choisir la meilleure agence de développement mobile pour mon projet?</h2>
-                <p className='mx-4'>
+                <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>Comment choisir la meilleure agence de développement mobile pour mon projet?</h2>
+                <p className='mx-5'  style={{textAlign:'justify'}}>
                 Pour choisir la meilleure agence de développement mobile pour votre projet, vous pouvez prendre en compte les éléments suivants :
                 <br/><b>Expérience et expertise : </b>Vérifiez l'expérience de l'agence dans le développement d'applications mobiles. Consultez leur portfolio pour voir les projets précédents sur lesquels ils ont travaillé et assurez-vous qu'ils ont de l'expérience dans votre domaine spécifique. Ils doivent également avoir une expertise dans les technologies et plateformes pertinentes pour votre projet, comme iOS, Android, React Native, etc.
                 <br/><b>Réputation et références :</b> Faites des recherches sur l'agence et vérifiez sa réputation. Consultez les avis des clients précédents, les témoignages et les recommandations. N'hésitez pas à demander des références et à contacter d'anciens clients pour obtenir leur retour d'expérience sur le travail de l'agence.
@@ -384,14 +398,16 @@ export default function Text(props) {
                 <br/>En prenant en compte ces différents critères, vous serez en mesure de choisir une agence de développement mobile qui correspond le mieux à vos besoins, à votre projet et à votre budget. N'hésitez pas à prendre le temps de faire des recherches approfondies et à poser des questions avant de prendre votre décision finale.
                 </p>
             </div>
-        
+            </div>
     }
     return (
         <>
         {result}
-        <div className='mt-4 container'>
-            <h2 className='mt-5'>Les entreprises à {props.city}</h2>
-            <p className='mx-4'> {props.cityText} </p>
+        <div className='container mt-4 px-5 helvetica'>
+        <div className='container'>
+            <h2 className='mt-5 pl-5 font-weight-bold blue mx-5'>Les entreprises à {props.city}</h2>
+            <p className='mx-5'  style={{textAlign:'justify'}}> {props.cityText} </p>
+        </div>
         </div>
         </>
     )
